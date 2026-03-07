@@ -5,8 +5,11 @@ on:
   workflow_dispatch:
   # Ejecutar diariamente de lunes a sábado entre 7am y 11pm (hora de Perú: UTC-5)
   schedule:
-    - cron: '0 12-23 * * 1-6'  # 7am-6pm UTC = 12pm-11pm UTC (7am-6pm Perú)
-    - cron: '0 0-4 * * 1-6'    # 7pm-11pm UTC = 12am-4am UTC (7pm-11pm Perú)
+    - cron: '0 12-23 * * 1-6'
+    - cron: '0 0-4 * * 1-6'
+
+permissions:
+  contents: write
 
 jobs:
   generate-reports:
