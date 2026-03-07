@@ -72,9 +72,11 @@ async function runSnapshotUpdate() {
 
     const fullData = productos.map(p => {
       const stock = stockMap[p.sku] || 0;
+      const minCajas = 10; // Umbral de cajas para alerta
+      const stockMinimo = (p.unBx || 1) * minCajas;
       let bgColor = GREEN_BG, fontColor = 'FF065F46', estado = '✓ OK';
       if (stock === 0) { bgColor = RED_BG; fontColor = 'FFDC2626'; estado = '✗ AGOTADO'; countSinStock++; }
-      else if (stock < 10) { bgColor = YELLOW_BG; fontColor = 'FFD97706'; estado = '⚠ BAJO'; countBajoStock++; }
+      else if (stock < stockMinimo) { bgColor = YELLOW_BG; fontColor = 'FFD97706'; estado = '⚠ BAJO'; countBajoStock++; }
       return { ...p, stock, estado, bgColor, fontColor };
     });
 

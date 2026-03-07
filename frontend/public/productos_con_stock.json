@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "lastUpdated": "2026-03-07T20:34:04.397Z",
+    "lastUpdated": "2026-03-07T20:41:51.420Z",
     "totalProducts": 1088,
     "almacen": "VES",
     "sinStock": 141,
-    "bajoStock": 71,
+    "bajoStock": 321,
     "status": "OPERATIVO"
   },
   "productos": [
@@ -43,9 +43,9 @@
       "categoria": "PELOTAS",
       "unBx": 24,
       "stock": 15,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 4,
@@ -134,9 +134,9 @@
       "categoria": "PELOTAS",
       "unBx": 24,
       "stock": 180,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 11,
@@ -160,9 +160,9 @@
       "categoria": "PELOTAS",
       "unBx": 24,
       "stock": 168,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 13,
@@ -173,9 +173,9 @@
       "categoria": "PELOTAS",
       "unBx": 36,
       "stock": 182,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 14,
@@ -212,9 +212,9 @@
       "categoria": "PELOTAS",
       "unBx": 24,
       "stock": 76,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 17,
@@ -433,9 +433,9 @@
       "categoria": "PELOTAS",
       "unBx": 50,
       "stock": 263,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 34,
@@ -537,9 +537,9 @@
       "categoria": "PELOTAS",
       "unBx": 48,
       "stock": 39,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 42,
@@ -667,9 +667,9 @@
       "categoria": "PELOTAS",
       "unBx": 48,
       "stock": 117,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 52,
@@ -693,9 +693,9 @@
       "categoria": "PELOTAS",
       "unBx": 48,
       "stock": 162,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 54,
@@ -719,9 +719,9 @@
       "categoria": "PELOTAS",
       "unBx": 36,
       "stock": 196,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 56,
@@ -823,9 +823,9 @@
       "categoria": "PELOTAS",
       "unBx": 48,
       "stock": 418,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 64,
@@ -1031,9 +1031,9 @@
       "categoria": "PELOTAS",
       "unBx": 60,
       "stock": 18,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 80,
@@ -1096,9 +1096,9 @@
       "categoria": "PELOTAS",
       "unBx": 60,
       "stock": 154,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 85,
@@ -1109,9 +1109,9 @@
       "categoria": "PELOTAS",
       "unBx": 60,
       "stock": 333,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 86,
@@ -1343,9 +1343,9 @@
       "categoria": "PELOTAS",
       "unBx": 60,
       "stock": 368,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 104,
@@ -1551,9 +1551,9 @@
       "categoria": "PELOTAS",
       "unBx": 36,
       "stock": 261,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 120,
@@ -1590,9 +1590,9 @@
       "categoria": "PELOTAS",
       "unBx": 36,
       "stock": 10,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 123,
@@ -1642,9 +1642,9 @@
       "categoria": "PELOTAS",
       "unBx": 120,
       "stock": 155,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 127,
@@ -1655,9 +1655,9 @@
       "categoria": "PELOTAS",
       "unBx": 120,
       "stock": 519,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 128,
@@ -1668,9 +1668,9 @@
       "categoria": "PELOTAS",
       "unBx": 120,
       "stock": 1067,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 129,
@@ -1681,9 +1681,9 @@
       "categoria": "PELOTAS",
       "unBx": 120,
       "stock": 884,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 130,
@@ -1694,9 +1694,9 @@
       "categoria": "PELOTAS",
       "unBx": 120,
       "stock": 55,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 131,
@@ -1707,9 +1707,9 @@
       "categoria": "PELOTAS",
       "unBx": 120,
       "stock": 233,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 132,
@@ -1733,9 +1733,9 @@
       "categoria": "PELOTAS",
       "unBx": 120,
       "stock": 1017,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 134,
@@ -1785,9 +1785,9 @@
       "categoria": "PELOTAS",
       "unBx": 120,
       "stock": 10,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 138,
@@ -1850,9 +1850,9 @@
       "categoria": "PELOTAS",
       "unBx": 120,
       "stock": 514,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 143,
@@ -1915,9 +1915,9 @@
       "categoria": "PELOTAS",
       "unBx": 120,
       "stock": 397,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 148,
@@ -1941,9 +1941,9 @@
       "categoria": "PELOTAS",
       "unBx": 120,
       "stock": 386,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 150,
@@ -2006,9 +2006,9 @@
       "categoria": "PELOTAS",
       "unBx": 120,
       "stock": 908,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 155,
@@ -2019,9 +2019,9 @@
       "categoria": "PELOTAS",
       "unBx": 120,
       "stock": 306,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 156,
@@ -2045,9 +2045,9 @@
       "categoria": "PELOTAS",
       "unBx": 120,
       "stock": 1101,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 158,
@@ -2123,9 +2123,9 @@
       "categoria": "PELOTAS",
       "unBx": 120,
       "stock": 264,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 164,
@@ -2162,9 +2162,9 @@
       "categoria": "PELOTAS",
       "unBx": 120,
       "stock": 764,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 167,
@@ -2175,9 +2175,9 @@
       "categoria": "PELOTAS",
       "unBx": 120,
       "stock": 157,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 168,
@@ -2188,9 +2188,9 @@
       "categoria": "PELOTAS",
       "unBx": 120,
       "stock": 703,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 169,
@@ -2266,9 +2266,9 @@
       "categoria": "PELOTAS",
       "unBx": 12,
       "stock": 22,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 175,
@@ -2370,9 +2370,9 @@
       "categoria": "PELOTAS",
       "unBx": 12,
       "stock": 53,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 183,
@@ -2383,9 +2383,9 @@
       "categoria": "PELOTAS",
       "unBx": 12,
       "stock": 11,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 184,
@@ -2877,9 +2877,9 @@
       "categoria": "ESCOLAR",
       "unBx": 50,
       "stock": 471,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 222,
@@ -2890,9 +2890,9 @@
       "categoria": "ESCOLAR",
       "unBx": 50,
       "stock": 445,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 223,
@@ -2994,9 +2994,9 @@
       "categoria": "ESCOLAR",
       "unBx": 50,
       "stock": 14,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 231,
@@ -3319,9 +3319,9 @@
       "categoria": "ESCOLAR",
       "unBx": 100,
       "stock": 42,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 256,
@@ -3397,9 +3397,9 @@
       "categoria": "ESCOLAR",
       "unBx": 100,
       "stock": 751,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 262,
@@ -3475,9 +3475,9 @@
       "categoria": "ESCOLAR",
       "unBx": 100,
       "stock": 645,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 268,
@@ -3527,9 +3527,9 @@
       "categoria": "ESCOLAR",
       "unBx": 100,
       "stock": 253,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 272,
@@ -3618,9 +3618,9 @@
       "categoria": "ESCOLAR",
       "unBx": 100,
       "stock": 100,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 279,
@@ -3800,9 +3800,9 @@
       "categoria": "ESCOLAR",
       "unBx": 100,
       "stock": 13,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 293,
@@ -3891,9 +3891,9 @@
       "categoria": "ESCOLAR",
       "unBx": 100,
       "stock": 940,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 300,
@@ -3969,9 +3969,9 @@
       "categoria": "ESCOLAR",
       "unBx": 120,
       "stock": 26,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 306,
@@ -4021,9 +4021,9 @@
       "categoria": "ESCOLAR",
       "unBx": 120,
       "stock": 60,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 310,
@@ -4034,9 +4034,9 @@
       "categoria": "ESCOLAR",
       "unBx": 120,
       "stock": 335,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 311,
@@ -4177,9 +4177,9 @@
       "categoria": "ESCOLAR",
       "unBx": 24,
       "stock": 137,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 322,
@@ -4294,9 +4294,9 @@
       "categoria": "ESCOLAR",
       "unBx": 18,
       "stock": 115,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 331,
@@ -4476,9 +4476,9 @@
       "categoria": "ESCOLAR",
       "unBx": 288,
       "stock": 1038,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 345,
@@ -4827,9 +4827,9 @@
       "categoria": "ESCOLAR",
       "unBx": 576,
       "stock": 2304,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 372,
@@ -4853,9 +4853,9 @@
       "categoria": "ESCOLAR",
       "unBx": 576,
       "stock": 1469,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 374,
@@ -4866,9 +4866,9 @@
       "categoria": "ESCOLAR",
       "unBx": 576,
       "stock": 63,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 375,
@@ -4905,9 +4905,9 @@
       "categoria": "ESCOLAR",
       "unBx": 576,
       "stock": 2846,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 378,
@@ -4918,9 +4918,9 @@
       "categoria": "ESCOLAR",
       "unBx": 576,
       "stock": 981,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 379,
@@ -4944,9 +4944,9 @@
       "categoria": "ESCOLAR",
       "unBx": 576,
       "stock": 125,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 381,
@@ -5087,9 +5087,9 @@
       "categoria": "ESCOLAR",
       "unBx": 192,
       "stock": 1033,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 392,
@@ -5165,9 +5165,9 @@
       "categoria": "ESCOLAR",
       "unBx": 192,
       "stock": 122,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 398,
@@ -5230,9 +5230,9 @@
       "categoria": "ESCOLAR",
       "unBx": 144,
       "stock": 1001,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 403,
@@ -5256,9 +5256,9 @@
       "categoria": "ESCOLAR",
       "unBx": 144,
       "stock": 258,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 405,
@@ -5269,9 +5269,9 @@
       "categoria": "ESCOLAR",
       "unBx": 72,
       "stock": 42,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 406,
@@ -5282,9 +5282,9 @@
       "categoria": "ESCOLAR",
       "unBx": 144,
       "stock": 344,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 407,
@@ -5295,9 +5295,9 @@
       "categoria": "ESCOLAR",
       "unBx": 72,
       "stock": 235,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 408,
@@ -5308,9 +5308,9 @@
       "categoria": "ESCOLAR",
       "unBx": 144,
       "stock": 1014,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 409,
@@ -5321,9 +5321,9 @@
       "categoria": "ESCOLAR",
       "unBx": 72,
       "stock": 120,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 410,
@@ -5334,9 +5334,9 @@
       "categoria": "ESCOLAR",
       "unBx": 144,
       "stock": 454,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 411,
@@ -5347,9 +5347,9 @@
       "categoria": "ESCOLAR",
       "unBx": 72,
       "stock": 60,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 412,
@@ -5360,9 +5360,9 @@
       "categoria": "ESCOLAR",
       "unBx": 144,
       "stock": 400,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 413,
@@ -5386,9 +5386,9 @@
       "categoria": "ESCOLAR",
       "unBx": 144,
       "stock": 273,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 415,
@@ -5412,9 +5412,9 @@
       "categoria": "ESCOLAR",
       "unBx": 144,
       "stock": 1400,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 417,
@@ -6660,9 +6660,9 @@
       "categoria": "ESCOLAR",
       "unBx": 24,
       "stock": 202,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 513,
@@ -6673,9 +6673,9 @@
       "categoria": "ESCOLAR",
       "unBx": 24,
       "stock": 198,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 514,
@@ -7011,9 +7011,9 @@
       "categoria": "ESCOLAR",
       "unBx": 120,
       "stock": 568,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 540,
@@ -7284,9 +7284,9 @@
       "categoria": "ESCOLAR",
       "unBx": 144,
       "stock": 19,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 561,
@@ -7440,9 +7440,9 @@
       "categoria": "ESCOLAR",
       "unBx": 1000,
       "stock": 3238,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 573,
@@ -7466,9 +7466,9 @@
       "categoria": "ESCOLAR",
       "unBx": 1000,
       "stock": 4021,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 575,
@@ -7492,9 +7492,9 @@
       "categoria": "ESCOLAR",
       "unBx": 500,
       "stock": 207,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 577,
@@ -7596,9 +7596,9 @@
       "categoria": "ESCOLAR",
       "unBx": 200,
       "stock": 1904,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 585,
@@ -7609,9 +7609,9 @@
       "categoria": "ESCOLAR",
       "unBx": 120,
       "stock": 1063,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 586,
@@ -7713,9 +7713,9 @@
       "categoria": "ESCOLAR",
       "unBx": 12,
       "stock": 22,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 594,
@@ -7804,9 +7804,9 @@
       "categoria": "ESCOLAR",
       "unBx": 200,
       "stock": 44,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 601,
@@ -7843,9 +7843,9 @@
       "categoria": "ESCOLAR",
       "unBx": 200,
       "stock": 1246,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 604,
@@ -7882,9 +7882,9 @@
       "categoria": "ESCOLAR",
       "unBx": 200,
       "stock": 932,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 607,
@@ -7947,9 +7947,9 @@
       "categoria": "ESCOLAR",
       "unBx": 200,
       "stock": 1865,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 612,
@@ -7999,9 +7999,9 @@
       "categoria": "ESCOLAR",
       "unBx": 1152,
       "stock": 227,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 616,
@@ -8025,9 +8025,9 @@
       "categoria": "ESCOLAR",
       "unBx": 1152,
       "stock": 3385,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 618,
@@ -8051,9 +8051,9 @@
       "categoria": "ESCOLAR",
       "unBx": 576,
       "stock": 4143,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 620,
@@ -8064,9 +8064,9 @@
       "categoria": "ESCOLAR",
       "unBx": 576,
       "stock": 5653,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 621,
@@ -8077,9 +8077,9 @@
       "categoria": "ESCOLAR",
       "unBx": 576,
       "stock": 207,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 622,
@@ -8090,9 +8090,9 @@
       "categoria": "ESCOLAR",
       "unBx": 576,
       "stock": 1132,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 623,
@@ -8116,9 +8116,9 @@
       "categoria": "ESCOLAR",
       "unBx": 576,
       "stock": 5395,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 625,
@@ -8298,9 +8298,9 @@
       "categoria": "ESCOLAR",
       "unBx": 96,
       "stock": 31,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 639,
@@ -8311,9 +8311,9 @@
       "categoria": "ESCOLAR",
       "unBx": 96,
       "stock": 10,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 640,
@@ -8389,9 +8389,9 @@
       "categoria": "ESCOLAR",
       "unBx": 288,
       "stock": 854,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 646,
@@ -8454,9 +8454,9 @@
       "categoria": "ESCOLAR",
       "unBx": 300,
       "stock": 1775,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 651,
@@ -8675,9 +8675,9 @@
       "categoria": "ESCOLAR",
       "unBx": 24,
       "stock": 57,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 668,
@@ -8831,9 +8831,9 @@
       "categoria": "ESCOLAR",
       "unBx": 30,
       "stock": 49,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 680,
@@ -8844,9 +8844,9 @@
       "categoria": "ESCOLAR",
       "unBx": 30,
       "stock": 297,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 681,
@@ -8857,9 +8857,9 @@
       "categoria": "ESCOLAR",
       "unBx": 30,
       "stock": 180,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 682,
@@ -9078,9 +9078,9 @@
       "categoria": "ESCOLAR",
       "unBx": 24,
       "stock": 17,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 699,
@@ -9091,9 +9091,9 @@
       "categoria": "ESCOLAR",
       "unBx": 24,
       "stock": 130,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 700,
@@ -9312,9 +9312,9 @@
       "categoria": "ESCOLAR",
       "unBx": 48,
       "stock": 48,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 717,
@@ -9325,9 +9325,9 @@
       "categoria": "ESCOLAR",
       "unBx": 48,
       "stock": 193,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 718,
@@ -9351,9 +9351,9 @@
       "categoria": "ESCOLAR",
       "unBx": 36,
       "stock": 218,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 720,
@@ -9429,9 +9429,9 @@
       "categoria": "ESCOLAR",
       "unBx": 240,
       "stock": 1086,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 726,
@@ -9611,9 +9611,9 @@
       "categoria": "ESCOLAR",
       "unBx": 10,
       "stock": 69,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 740,
@@ -9689,9 +9689,9 @@
       "categoria": "ESCOLAR",
       "unBx": 280,
       "stock": 745,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 746,
@@ -9728,9 +9728,9 @@
       "categoria": "ESCOLAR",
       "unBx": 720,
       "stock": 5462,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 749,
@@ -9741,9 +9741,9 @@
       "categoria": "ESCOLAR",
       "unBx": 720,
       "stock": 6036,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 750,
@@ -9767,9 +9767,9 @@
       "categoria": "ESCOLAR",
       "unBx": 720,
       "stock": 848,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 752,
@@ -9780,9 +9780,9 @@
       "categoria": "ESCOLAR",
       "unBx": 720,
       "stock": 4603,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 753,
@@ -9793,9 +9793,9 @@
       "categoria": "ESCOLAR",
       "unBx": 720,
       "stock": 369,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 754,
@@ -9806,9 +9806,9 @@
       "categoria": "ESCOLAR",
       "unBx": 720,
       "stock": 3947,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 755,
@@ -10508,9 +10508,9 @@
       "categoria": "ESCOLAR",
       "unBx": 5,
       "stock": 27,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 809,
@@ -10521,9 +10521,9 @@
       "categoria": "ESCOLAR",
       "unBx": 5,
       "stock": 26,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 810,
@@ -10599,9 +10599,9 @@
       "categoria": "ESCOLAR",
       "unBx": 144,
       "stock": 936,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 816,
@@ -10612,9 +10612,9 @@
       "categoria": "ESCOLAR",
       "unBx": 144,
       "stock": 359,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 817,
@@ -10638,9 +10638,9 @@
       "categoria": "ESCOLAR",
       "unBx": 144,
       "stock": 319,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 819,
@@ -10716,9 +10716,9 @@
       "categoria": "ESCOLAR",
       "unBx": 144,
       "stock": 808,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 825,
@@ -10859,9 +10859,9 @@
       "categoria": "ESCOLAR",
       "unBx": 144,
       "stock": 233,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 836,
@@ -11015,9 +11015,9 @@
       "categoria": "ESCOLAR",
       "unBx": 192,
       "stock": 1359,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 848,
@@ -11106,9 +11106,9 @@
       "categoria": "ESCOLAR",
       "unBx": 192,
       "stock": 65,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 855,
@@ -11145,9 +11145,9 @@
       "categoria": "ESCOLAR",
       "unBx": 192,
       "stock": 788,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 858,
@@ -11158,9 +11158,9 @@
       "categoria": "ESCOLAR",
       "unBx": 192,
       "stock": 137,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 859,
@@ -11288,9 +11288,9 @@
       "categoria": "ESCOLAR",
       "unBx": 192,
       "stock": 287,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 869,
@@ -11314,9 +11314,9 @@
       "categoria": "ESCOLAR",
       "unBx": 192,
       "stock": 185,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 871,
@@ -11366,9 +11366,9 @@
       "categoria": "ESCOLAR",
       "unBx": 192,
       "stock": 108,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 875,
@@ -11379,9 +11379,9 @@
       "categoria": "ESCOLAR",
       "unBx": 192,
       "stock": 99,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 876,
@@ -11392,9 +11392,9 @@
       "categoria": "ESCOLAR",
       "unBx": 192,
       "stock": 125,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 877,
@@ -11405,9 +11405,9 @@
       "categoria": "ESCOLAR",
       "unBx": 192,
       "stock": 17,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 878,
@@ -11418,9 +11418,9 @@
       "categoria": "ESCOLAR",
       "unBx": 192,
       "stock": 114,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 879,
@@ -11431,9 +11431,9 @@
       "categoria": "ESCOLAR",
       "unBx": 192,
       "stock": 126,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 880,
@@ -11444,9 +11444,9 @@
       "categoria": "ESCOLAR",
       "unBx": 192,
       "stock": 42,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 881,
@@ -11457,9 +11457,9 @@
       "categoria": "ESCOLAR",
       "unBx": 192,
       "stock": 58,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 882,
@@ -11678,9 +11678,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 1031,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 899,
@@ -11691,9 +11691,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 268,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 900,
@@ -11704,9 +11704,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 240,
       "stock": 253,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 901,
@@ -11717,9 +11717,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 200,
       "stock": 59,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 902,
@@ -11743,9 +11743,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 60,
       "stock": 132,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 904,
@@ -11756,9 +11756,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 191,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 905,
@@ -11769,9 +11769,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 189,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 906,
@@ -11782,9 +11782,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 84,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 907,
@@ -11795,9 +11795,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 692,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 908,
@@ -11808,9 +11808,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 257,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 909,
@@ -11821,9 +11821,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 983,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 910,
@@ -11834,9 +11834,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 195,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 911,
@@ -11847,9 +11847,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 75,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 912,
@@ -11860,9 +11860,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 439,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 913,
@@ -11899,9 +11899,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 113,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 916,
@@ -11912,9 +11912,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 348,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 917,
@@ -11925,9 +11925,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 123,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 918,
@@ -11938,9 +11938,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 160,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 919,
@@ -11964,9 +11964,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 72,
       "stock": 94,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 921,
@@ -11977,9 +11977,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 56,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 922,
@@ -12029,9 +12029,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 907,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 926,
@@ -12055,9 +12055,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 118,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 928,
@@ -12068,9 +12068,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 240,
       "stock": 944,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 929,
@@ -12081,9 +12081,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 123,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 930,
@@ -12094,9 +12094,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 240,
       "stock": 278,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 931,
@@ -12107,9 +12107,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 240,
       "stock": 245,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 932,
@@ -12120,9 +12120,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 240,
       "stock": 107,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 933,
@@ -12133,9 +12133,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 240,
       "stock": 273,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 934,
@@ -12159,9 +12159,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 480,
       "stock": 1090,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 936,
@@ -12172,9 +12172,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 240,
       "stock": 163,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 937,
@@ -12185,9 +12185,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 800,
       "stock": 1475,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 938,
@@ -12198,9 +12198,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 240,
       "stock": 164,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 939,
@@ -12211,9 +12211,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 140,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 940,
@@ -12224,9 +12224,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 261,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 941,
@@ -12237,9 +12237,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 291,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 942,
@@ -12250,9 +12250,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 10,
       "stock": 10,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 943,
@@ -12263,9 +12263,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 60,
       "stock": 82,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 944,
@@ -12276,9 +12276,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 20,
       "stock": 27,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 945,
@@ -12289,9 +12289,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 720,
       "stock": 2462,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 946,
@@ -12302,9 +12302,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 208,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 947,
@@ -12328,9 +12328,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 720,
       "stock": 4873,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 949,
@@ -12341,9 +12341,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 240,
       "stock": 201,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 950,
@@ -12380,9 +12380,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 240,
       "stock": 300,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 953,
@@ -12393,9 +12393,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 240,
       "stock": 198,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 954,
@@ -12419,9 +12419,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 60,
       "stock": 513,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 956,
@@ -12432,9 +12432,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 60,
       "stock": 65,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 957,
@@ -12445,9 +12445,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 69,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 958,
@@ -12471,9 +12471,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 240,
       "stock": 55,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 960,
@@ -12497,9 +12497,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 240,
       "stock": 130,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 962,
@@ -12523,9 +12523,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 480,
       "stock": 412,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 964,
@@ -12536,9 +12536,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 240,
       "stock": 500,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 965,
@@ -12549,9 +12549,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 240,
       "stock": 1529,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 966,
@@ -12588,9 +12588,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 600,
       "stock": 539,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 969,
@@ -12601,9 +12601,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 114,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 970,
@@ -12627,9 +12627,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 60,
       "stock": 12,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 972,
@@ -12679,9 +12679,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 40,
       "stock": 80,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 976,
@@ -12770,9 +12770,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 10,
       "stock": 68,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 983,
@@ -12952,9 +12952,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 56,
       "stock": 354,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 997,
@@ -12965,9 +12965,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 15,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 998,
@@ -12991,9 +12991,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 18,
       "stock": 79,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1000,
@@ -13069,9 +13069,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 5,
       "stock": 39,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1006,
@@ -13082,9 +13082,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 800,
       "stock": 312,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1007,
@@ -13147,9 +13147,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 10,
       "stock": 36,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1012,
@@ -13186,9 +13186,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 40,
       "stock": 127,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1015,
@@ -13199,9 +13199,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 4,
       "stock": 37,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1016,
@@ -13225,9 +13225,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 4,
       "stock": 17,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1018,
@@ -13238,9 +13238,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 4,
       "stock": 24,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1019,
@@ -13251,9 +13251,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 4,
       "stock": 18,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1020,
@@ -13290,9 +13290,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 60,
       "stock": 357,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1023,
@@ -13303,9 +13303,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 60,
       "stock": 58,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1024,
@@ -13316,9 +13316,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 60,
       "stock": 138,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1025,
@@ -13329,9 +13329,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 60,
       "stock": 480,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1026,
@@ -13342,9 +13342,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 60,
       "stock": 521,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1027,
@@ -13355,9 +13355,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 60,
       "stock": 480,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1028,
@@ -13394,9 +13394,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 63,
       "stock": 566,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1031,
@@ -13420,9 +13420,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 40,
       "stock": 108,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1033,
@@ -13433,9 +13433,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 60,
       "stock": 122,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1034,
@@ -13446,9 +13446,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 6,
       "stock": 15,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1035,
@@ -13472,9 +13472,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 8,
       "stock": 10,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1037,
@@ -13485,9 +13485,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 30,
       "stock": 34,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1038,
@@ -13511,9 +13511,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 5,
       "stock": 30,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1040,
@@ -13576,9 +13576,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 240,
       "stock": 640,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1045,
@@ -13589,9 +13589,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 121,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1046,
@@ -13628,9 +13628,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 72,
       "stock": 66,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1049,
@@ -13641,9 +13641,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 60,
       "stock": 30,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1050,
@@ -13654,9 +13654,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 83,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1051,
@@ -13667,9 +13667,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 72,
       "stock": 10,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1052,
@@ -13680,9 +13680,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 20,
       "stock": 51,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1053,
@@ -13693,9 +13693,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 100,
       "stock": 74,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1054,
@@ -13706,9 +13706,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 5,
       "stock": 11,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1055,
@@ -13732,9 +13732,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 20,
       "stock": 35,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1057,
@@ -13745,9 +13745,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 20,
       "stock": 62,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1058,
@@ -13758,9 +13758,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 24,
       "stock": 28,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1059,
@@ -13771,9 +13771,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 240,
       "stock": 920,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1060,
@@ -13784,9 +13784,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 240,
       "stock": 102,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1061,
@@ -13797,9 +13797,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 480,
       "stock": 211,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1062,
@@ -13810,9 +13810,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 753,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1063,
@@ -13823,9 +13823,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 240,
       "stock": 31,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1064,
@@ -13836,9 +13836,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 240,
       "stock": 93,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1065,
@@ -13849,9 +13849,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 480,
       "stock": 378,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1066,
@@ -13862,9 +13862,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 94,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1067,
@@ -13875,9 +13875,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 103,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1068,
@@ -13888,9 +13888,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 120,
       "stock": 93,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1069,
@@ -13901,9 +13901,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 12,
       "stock": 68,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1070,
@@ -13914,9 +13914,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 12,
       "stock": 77,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1071,
@@ -13992,9 +13992,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 20,
       "stock": 144,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1077,
@@ -14005,9 +14005,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 20,
       "stock": 40,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1078,
@@ -14018,9 +14018,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 56,
       "stock": 20,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1079,
@@ -14031,9 +14031,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 50,
       "stock": 17,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1080,
@@ -14044,9 +14044,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 50,
       "stock": 380,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1081,
@@ -14122,9 +14122,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 60,
       "stock": 454,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1087,
@@ -14135,9 +14135,9 @@
       "categoria": "REPRESENTADAS",
       "unBx": 100,
       "stock": 880,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 1088,
