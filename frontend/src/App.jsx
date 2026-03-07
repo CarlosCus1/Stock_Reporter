@@ -11,23 +11,29 @@ const CATEGORIAS = [
 function App() {
   const [activeTab, setActiveTab] = useState('pulso')
   const [form, setForm] = useState({ nombre: '', email: '', categoria: 'todos' })
+  const [isRefreshing, setIsRefreshing] = useState(false)
   const [ui, setUi] = useState({ 
     isValido: false, reporteGenerado: false, theme: 'light',
     isSearching: false, searchTerm: '', allProducts: [], 
     metadata: { lastUpdated: '', totalProducts: 0, almacen: 'Cipsa', sinStock: 0, bajoStock: 0, status: '...' }
   })
 
+  const loadProducts = async () => {
+    setIsRefreshing(true)
+    try {
+      const baseUrl = import.meta.env.BASE_URL;
+      // Agregar timestamp para evitar caché del navegador
+      const cacheBuster = `?t=${Date.now()}`
+      const res = await fetch(`${baseUrl}productos_con_stock.json${cacheBuster}`)
+      if (res.ok) {
+        const data = await res.json()
+        setUi(prev => ({ ...prev, allProducts: data.productos || [], metadata: data.metadata || prev.metadata }))
+      }
+    } catch (err) { console.error('Error cargando data:', err) }
+    setIsRefreshing(false)
+  }
+
   useEffect(() => {
-    const loadProducts = async () => {
-      try {
-        const baseUrl = import.meta.env.BASE_URL;
-        const res = await fetch(`${baseUrl}productos_con_stock.json`)
-        if (res.ok) {
-          const data = await res.json()
-          setUi(prev => ({ ...prev, allProducts: data.productos || [], metadata: data.metadata || prev.metadata }))
-        }
-      } catch (err) { console.error('Error cargando data:', err) }
-    }
     loadProducts()
   }, [])
 
@@ -69,6 +75,7 @@ function App() {
 
   const handleDescargar = async () => {
     const baseUrl = import.meta.env.BASE_URL;
+    const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001';
     const catSuffix = (form.categoria || 'todos').toUpperCase();
     const serverFileName = `StockPulse_${catSuffix}.xlsx`; 
     const downloadPath = `${baseUrl}reports/${serverFileName}`;
@@ -91,6 +98,26 @@ function App() {
       link.click();
       document.body.removeChild(link);
       window.URL.revokeObjectURL(url);
+      
+      // Registrar descarga en el servidor API
+      try {
+        await fetch(`${apiUrl}/api/descargas/registrar`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            nombre: form.nombre,
+            email: form.email,
+            categoria: form.categoria,
+            timestamp: new Date().toISOString()
+          })
+        });
+      } catch (regError) {
+        console.warn('No se pudo registrar la descarga:', regError);
+      }
+      
+      // Limpiar formulario después de descargar para evitar descargas excesivas
+      setForm({ nombre: '', email: '', categoria: 'todos' })
+      setUi(prev => ({ ...prev, reporteGenerado: false }))
     } catch (err) { alert(err.message); }
   }
 
@@ -112,6 +139,15 @@ function App() {
             </button>
           </div>
           <div className="flex-1 overflow-y-auto p-6 space-y-4">
+            {ui.searchTerm && ui.searchTerm.length >= 2 && (
+              <div className="flex items-center justify-between text-xs text-slate-400 dark:text-slate-500 mb-2 px-1">
+                <span>{searchResults.length} resultado{searchResults.length !== 1 ? 's' : ''}</span>
+                <span className="flex items-center gap-1">
+                  <span className="material-symbols-outlined text-[14px]">schedule</span>
+                  Actualizado: {ui.metadata.lastUpdated ? new Date(ui.metadata.lastUpdated).toLocaleString('es-PE', { day: '2-digit', month: '2-digit', year: '2-digit', hour: '2-digit', minute: '2-digit' }) : 'N/A'}
+                </span>
+              </div>
+            )}
             {searchResults.map(p => (
               <div key={p.sku} className="p-5 bg-white dark:bg-[#1a2a2c] rounded-2xl border border-slate-100 dark:border-slate-800 flex items-center justify-between">
                 <div className="flex-1 min-w-0 mr-4">
@@ -205,11 +241,22 @@ function App() {
           </div>
         ) : (
           <div className="animate-in fade-in slide-in-from-right-4 duration-500 pt-10">
-            <h1 className="text-3xl font-bold mb-8 text-primary">Estado del Sistema</h1>
+            <h1 className="text-3xl font-bold mb-2 text-primary">Estado del Sistema</h1>
+            <div className="flex items-center justify-between mb-6">
+              <p className="text-sm text-slate-500">Monitoreo en tiempo real</p>
+              <button 
+                onClick={loadProducts} 
+                disabled={isRefreshing}
+                className="flex items-center gap-2 px-4 py-2 bg-primary text-white text-xs font-bold rounded-xl hover:bg-primary/90 transition-colors disabled:opacity-50"
+              >
+                <span className={`material-symbols-outlined text-[18px] ${isRefreshing ? 'animate-spin' : ''}`}>refresh</span>
+                {isRefreshing ? 'Actualizando...' : 'Forzar Actualización'}
+              </button>
+            </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="p-6 bg-white dark:bg-[#1a2a2c] rounded-3xl border border-slate-100 dark:border-slate-800">
                 <p className="text-[10px] font-bold uppercase opacity-50 mb-2">Último Pulso</p>
-                <p className="text-lg font-bold">{new Date(ui.metadata.lastUpdated).toLocaleTimeString()}</p>
+                <p className="text-lg font-bold">{ui.metadata.lastUpdated ? new Date(ui.metadata.lastUpdated).toLocaleString('es-PE', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' }) : 'Sin datos'}</p>
               </div>
               <div className="p-6 bg-white dark:bg-[#1a2a2c] rounded-3xl border border-slate-100 dark:border-slate-800">
                 <p className="text-[10px] font-bold uppercase opacity-50 mb-2">Estado Bot</p>

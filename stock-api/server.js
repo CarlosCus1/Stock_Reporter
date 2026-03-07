@@ -1,8 +1,10 @@
 const express = require('express');
 const cors = require('cors');
-const xlsx = require('xlsx');
-const https = require('https');
-const http = require('http');
+xlsx = require('xlsx'),
+https = require('https'),
+http = require('http'),
+fs = require('fs'),
+path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -168,6 +170,119 @@ app.get('/api/stock/drive', async (req, res) => {
 // Endpoint: Health check
 app.get('/api/health', (req, res) => {
   res.json({ status: 'OK', timestamp: new Date().toISOString() });
+});
+
+// Endpoint: Registrar descarga de reporte
+app.post('/api/descargas/registrar', (req, res) => {
+  try {
+    const { nombre, email, categoria, timestamp } = req.body;
+    
+    // Validar datos requeridos
+    if (!nombre || !email || !categoria) {
+      return res.status(400).json({
+        success: false,
+        error: 'Faltan datos requeridos: nombre, email, categoria'
+      });
+    }
+    
+    // Validar formato de email
+    const emailValido = /^[\w.-]+@[\w.-]+\.\w{2,}$/.test(email);
+    if (!emailValido) {
+      return res.status(400).json({
+        success: false,
+        error: 'Email inválido'
+      });
+    }
+    
+    // Validar que sea email corporativo de CIPSA
+    if (!email.endsWith('@cipsa.com.pe')) {
+      return res.status(403).json({
+        success: false,
+        error: 'Solo se permiten emails corporativos de CIPSA'
+      });
+    }
+    
+    const registro = {
+      id: Date.now().toString(36) + Math.random().toString(36).substr(2, 5),
+      nombre: nombre.trim(),
+      email: email.toLowerCase().trim(),
+      categoria: categoria,
+      timestamp: timestamp || new Date().toISOString(),
+      ip: req.ip || req.connection.remoteAddress || 'desconocido',
+      userAgent: req.headers['user-agent'] || 'desconocido'
+    };
+    
+    // Guardar en archivo JSON
+    const logFile = path.join(__dirname, 'logs', 'descargas.json');
+    let descargas = [];
+    
+    // Crear directorio si no existe
+    const logsDir = path.join(__dirname, 'logs');
+    if (!fs.existsSync(logsDir)) {
+      fs.mkdirSync(logsDir, { recursive: true });
+    }
+    
+    // Leer archivo existente
+    if (fs.existsSync(logFile)) {
+      try {
+        const data = fs.readFileSync(logFile, 'utf8');
+        descargas = JSON.parse(data);
+      } catch (e) {
+        descargas = [];
+      }
+    }
+    
+    // Agregar nuevo registro
+    descargas.unshift(registro); // Agregar al inicio
+    
+    // Mantener solo últimos 1000 registros
+    if (descargas.length > 1000) {
+      descargas = descargas.slice(0, 1000);
+    }
+    
+    // Guardar archivo
+    fs.writeFileSync(logFile, JSON.stringify(descargas, null, 2));
+    
+    console.log(`📥 Descarga registrada: ${nombre} (${email}) - ${categoria}`);
+    
+    res.json({
+      success: true,
+      message: 'Descarga registrada correctamente',
+      registroId: registro.id
+    });
+  } catch (error) {
+    console.error('Error al registrar descarga:', error.message);
+    res.status(500).json({
+      success: false,
+      error: error.message
+    });
+  }
+});
+
+// Endpoint: Ver historial de descargas (para administración)
+app.get('/api/descargas/historial', (req, res) => {
+  try {
+    const logFile = path.join(__dirname, 'logs', 'descargas.json');
+    
+    if (!fs.existsSync(logFile)) {
+      return res.json({ success: true, descargas: [], total: 0 });
+    }
+    
+    const data = fs.readFileSync(logFile, 'utf8');
+    const descargas = JSON.parse(data);
+    
+    res.json({
+      success: true,
+      total: descargas.length,
+      descargas: descargas
+    });
+  } catch (error) {
+    console.error('Error al leer historial:', error.message);
+    res.status(500).json({
+      success: false,
+      error: error.message
+    });
+  }
 });
 
 app.listen(PORT, () => {
