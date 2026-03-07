@@ -105,8 +105,8 @@ const handleDescargar = async () => {
           <div className="p-6 flex items-center gap-4 border-b border-slate-200 dark:border-white/5">
             <span className="material-symbols-outlined text-primary text-3xl">search</span>
             <input 
-              autoFocus className="flex-1 bg-transparent border-none text-2xl font-bold focus:ring-0 outline-none"
-              placeholder="SKU o nombre..." value={ui.searchTerm}
+              autoFocus className="flex-1 bg-transparent border-none text-3xl font-bold focus:ring-0 outline-none h-14"
+              placeholder="SKU, EAN o nombre..." value={ui.searchTerm}
               title="Ingrese al menos 2 caracteres para buscar"
               onChange={(e) => setUi(prev => ({ ...prev, searchTerm: e.target.value }))}
             />
