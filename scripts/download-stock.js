@@ -49,7 +49,7 @@ async function downloadAndConvert() {
         
         // Mapeo basado en la estructura estándar de CIPSA:
         // Columna 1: SKU | Columna 9: Almacen | Columna 18: Disponible
-        const sku = String(row[1] || '').trim().replace(/^0+/, '');
+        const sku = String(row[1] || '').trim(); // Sin eliminar ceros - preservar como viene
         const almacen = String(row[9] || '').trim().toUpperCase();
         const disponible = parseInt(row[18], 10) || 0;
 
