@@ -73,7 +73,7 @@ async function runSnapshotUpdate() {
 
     const fullData = productos.map(p => {
       const stock = stockMap[p.sku] || 0;
-      const minCajas = 10; // Umbral de cajas para alerta
+      const minCajas = 5; // Umbral de cajas para alerta de stock bajo
       const stockMinimo = (p.unBx || 1) * minCajas;
       let bgColor = GREEN_BG, fontColor = 'FF065F46', estado = '✓ OK';
       if (stock === 0) { bgColor = RED_BG; fontColor = 'FFDC2626'; estado = '✗ AGOTADO'; countSinStock++; }
