@@ -45,7 +45,7 @@ function convertirCodigosAJson() {
         orden: row.ORDEN || row.orden || index + 1,
         sku,
         nombre,
-        ean: String(row.EAN_13 || row.ean || '').trim(),
+        ean: String(row.EAN || row.ean || row.EAN_13 || '').trim(),
         linea,
         categoria,
         unBx: parseInt(row['UN/BX'] || row.unBx, 10) || 0
