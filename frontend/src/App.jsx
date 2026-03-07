@@ -116,18 +116,18 @@ const handleDescargar = async () => {
           </div>
           <div className="flex-1 overflow-y-auto p-6 space-y-4">
             {searchResults.map(p => (
-              <div key={p.sku} className="p-5 bg-white dark:bg-white/5 rounded-2xl border border-slate-100 dark:border-white/5 flex items-center justify-between" title={`Línea: ${p.linea}`}>
-                <div className="flex-1 min-w-0 mr-4">
-                  <div className="flex gap-2 flex-wrap">
-                    <span className="text-[10px] font-bold text-primary px-2 py-0.5 bg-primary/10 rounded-lg">{p.sku}</span>
-                    {p.ean && <span className="text-[10px] font-bold text-slate-500 px-2 py-0.5 bg-slate-100 dark:bg-white/10 rounded-lg">EAN: {p.ean}</span>}
+              <div key={p.sku} className="p-5 bg-white dark:bg-white/5 rounded-2xl border border-slate-100 dark:border-white/5" title={`Línea: ${p.linea}`}>
+                <div className="flex items-start justify-between mb-3">
+                  <div>
+                    <p className="text-2xl font-bold text-primary">{p.sku}</p>
+                    {p.ean && <p className="text-xs text-slate-400 font-mono mt-1">EAN: {p.ean}</p>}
                   </div>
-                  <p className="font-bold truncate mt-1">{p.nombre}</p>
+                  <div className="text-right">
+                    <p className="text-2xl font-bold">{p.stock}</p>
+                    <p className="text-[9px] uppercase opacity-50">{ui.metadata.almacen}</p>
+                  </div>
                 </div>
-                <div className="text-right">
-                  <span className="text-xl font-bold">{p.stock}</span>
-                  <p className="text-[9px] uppercase opacity-50">{ui.metadata.almacen}</p>
-                </div>
+                <p className="font-medium text-sm opacity-80">{p.nombre}</p>
               </div>
             ))}
           </div>
