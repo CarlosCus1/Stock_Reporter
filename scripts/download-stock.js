@@ -40,8 +40,8 @@ async function downloadAndConvert() {
       const workbook = xlsx.read(buffer, { type: 'buffer' });
       const sheet = workbook.Sheets[workbook.SheetNames[0]];
       
-      // Leer como array de arrays para máxima precisión
-      const rawData = xlsx.utils.sheet_to_json(sheet, { header: 1 });
+      // Leer como texto formateado para preservar ceros (02210)
+      const rawData = xlsx.utils.sheet_to_json(sheet, { header: 1, raw: false });
       const stockMap = {};
 
       rawData.forEach((row, index) => {

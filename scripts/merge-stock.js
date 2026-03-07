@@ -15,7 +15,8 @@ const RED_ARROW = '✗ AGOTADO';
 const YELLOW_ARROW = '⚠ BAJO';
 const GREEN_ARROW = '✓ OK';
 
-const normalizeSKU = (sku) => String(sku || '').trim().replace(/^0+/, '');
+// Normalizar SKU: mantener como string puro con sus ceros originales
+const normalizeSKU = (sku) => String(sku || '').trim();
 
 const applyProfessionalStyles = (worksheet) => {
   worksheet.columns = [

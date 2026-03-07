@@ -23,7 +23,10 @@ function convertirCodigosAJson() {
     }
 
     const workbook = xlsx.readFile(inputPath);
-    const data = xlsx.utils.sheet_to_json(workbook.Sheets[workbook.SheetNames[0]]);
+    const data = xlsx.utils.sheet_to_json(workbook.Sheets[workbook.SheetNames[0]], { 
+      raw: false, // Forzar a que todo se lea como texto formateado
+      defval: '' 
+    });
     
     if (data.length === 0) {
       throw new Error('ERROR: El archivo Excel está vacío.');
@@ -33,8 +36,8 @@ function convertirCodigosAJson() {
     const lineasDetectadas = new Set();
 
     const productos = data.map((row, index) => {
-      // Normalización de campos clave
-      const sku = String(row.SKU || row.sku || '').trim().replace(/^0+/, '');
+      // Mantener el formato original del SKU (incluyendo ceros a la izquierda)
+      const sku = String(row.SKU || row.sku || '').trim();
       const linea = (row.LINEA || row.linea || 'SIN LINEA').trim().toUpperCase();
       const categoria = (row.CATEGORIA || row.categoria || 'SIN CATEGORIA').trim().toUpperCase();
       const nombre = (row.NOMBRE || row.nombre || '').trim();

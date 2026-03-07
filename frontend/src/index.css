@@ -12,48 +12,55 @@
 
 html { 
   font-family: var(--font-family-display); 
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
+  background-color: var(--color-background-light);
+}
+
+html.dark {
+  background-color: var(--color-background-dark);
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined' !important;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  display: inline-block;
+  white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
 }
 
 body { 
-  background-color: var(--color-background-light); 
-  min-height: 100dvh; 
   margin: 0; 
   color: #0f172a; 
+  min-height: 100dvh;
 }
 
 .dark body { 
-  background-color: var(--color-background-dark); 
   color: #f1f5f9; 
 }
 
-/* Evitar sombras extrañas en modo oscuro */
-.dark {
-  --tw-shadow-colored: 0 0 #0000;
-}
-
-.dark .shadow-lg,
-.dark .shadow-md,
-.dark .shadow-sm {
-  --tw-shadow: 0 0 #0000;
-}
-
-/* Componentes */
+/* UI PLANA - CERO SOMBRAS (SHADOWS) */
 .btn-primary {
-  @apply w-full h-14 bg-primary text-slate-900 font-bold rounded-2xl flex items-center justify-center gap-2 
-         shadow-lg shadow-primary/20 active:scale-95 transition-all cursor-pointer border-none;
+  @apply w-full h-14 bg-primary text-slate-900 font-bold rounded-2xl flex items-center justify-center gap-2 border-none cursor-pointer active:scale-95 transition-transform;
 }
 
 .input-field {
   @apply w-full pl-12 pr-4 h-14 bg-white border border-slate-200 rounded-2xl focus:outline-none 
-         focus:ring-2 focus:ring-primary focus:border-primary text-slate-900 transition-all;
+         focus:border-primary text-slate-900 transition-all;
 }
-.dark .input-field { @apply bg-white/5 border-white/10 text-white; }
+.dark .input-field { 
+  @apply bg-[#1a2a2c] border-[#2a3a3c] text-white focus:border-primary; 
+}
 
-.chip { @apply px-5 py-2.5 rounded-full font-bold text-sm transition-all cursor-pointer border-none; }
+.chip { @apply px-5 py-2.5 rounded-full font-bold text-sm border-none cursor-pointer active:scale-95 transition-transform; }
 .chip-active { @apply bg-primary text-slate-900; }
 .chip-inactive { @apply bg-white border border-slate-200 text-slate-600; }
-.dark .chip-inactive { @apply bg-white/5 border-white/10 text-slate-400; }
+.dark .chip-inactive { @apply bg-[#1a2a2c] border-[#2a3a3c] text-slate-400; }
 
-.card-success { @apply bg-emerald-50 border border-emerald-200 rounded-3xl p-8; }
-.dark .card-success { @apply bg-emerald-500/5 border-emerald-500/20; }
+.card-success { @apply bg-emerald-50 border border-emerald-100 rounded-3xl p-8; }
+.dark .card-success { @apply bg-[#1a2a2c] border-emerald-900/30; }
+
+/* Ocultar scrollbar */
+::-webkit-scrollbar { width: 0px; }
