@@ -11,6 +11,9 @@ const PRIMARY_COLOR = 'FF13DAEC';
 const RED_BG = 'FFFEE2E2';
 const YELLOW_BG = 'FFFEF3C7';
 const GREEN_BG = 'FFD1FAE5';
+const RED_ARROW = '↑';
+const YELLOW_ARROW = '→';
+const GREEN_ARROW = '↓';
 
 const normalizeSKU = (sku) => String(sku || '').trim().replace(/^0+/, '');
 
@@ -19,10 +22,11 @@ const applyProfessionalStyles = (worksheet) => {
     { header: '#', key: 'item', width: 6 },
     { header: 'Código', key: 'sku', width: 12 },
     { header: 'EAN', key: 'ean', width: 18 },
-    { header: 'Nombre del Producto', key: 'nombre', width: 55 },
+    { header: 'Nombre del Producto', key: 'nombre', width: 45 },
     { header: 'U. x Caja', key: 'unBx', width: 10 },
-    { header: 'Stock VES', key: 'stock', width: 12 },
-    { header: 'Alerta', key: 'alerta', width: 8 }
+    { header: 'Stock', key: 'stock', width: 10 },
+    { header: 'Estado', key: 'flecha', width: 8 },
+    { header: 'Color', key: 'color', width: 8 }
   ];
   const headerRow = worksheet.getRow(1);
   headerRow.height = 30;
@@ -31,17 +35,20 @@ const applyProfessionalStyles = (worksheet) => {
     cell.font = { bold: true, size: 11 };
     cell.alignment = { vertical: 'middle', horizontal: 'center' };
   });
-  worksheet.autoFilter = { from: 'A1', to: 'G1' };
+  worksheet.autoFilter = { from: 'A1', to: 'H1' };
   worksheet.views = [{ state: 'frozen', ySplit: 1 }];
 };
 
 const addDataToSheet = (worksheet, data) => {
   data.forEach((p, index) => {
-    const row = worksheet.addRow([index + 1, p.sku, p.ean, p.nombre, p.unBx, p.stock, p.alerta]);
-    row.getCell(6).fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: p.bgColor } };
-    row.getCell(6).font = { bold: true };
-    row.getCell(6).alignment = { horizontal: 'center' };
+    const row = worksheet.addRow([index + 1, p.sku, p.ean, p.nombre, p.unBx, p.stock, p.flecha, p.color]);
+    // Columna Estado (flecha)
+    row.getCell(7).value = p.flecha;
+    row.getCell(7).font = { bold: true, size: 14 };
     row.getCell(7).alignment = { horizontal: 'center' };
+    // Columna Color (fondo)
+    row.getCell(8).fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: p.bgColor } };
+    row.getCell(8).alignment = { horizontal: 'center' };
   });
 };
 
@@ -65,10 +72,10 @@ async function runSnapshotUpdate() {
 
     const fullData = productos.map(p => {
       const stock = stockMap[p.sku] || 0;
-      let color = GREEN_BG, alerta = '🟢';
-      if (stock === 0) { color = RED_BG; alerta = '🔴'; countSinStock++; }
-      else if (stock < 10) { color = YELLOW_BG; alerta = '🟡'; countBajoStock++; }
-      return { ...p, stock, alerta, bgColor: color };
+      let bgColor = GREEN_BG, flecha = GREEN_ARROW, color = 'Verde';
+      if (stock === 0) { bgColor = RED_BG; flecha = RED_ARROW; color = 'Rojo'; countSinStock++; }
+      else if (stock < 10) { bgColor = YELLOW_BG; flecha = YELLOW_ARROW; color = 'Amarillo'; countBajoStock++; }
+      return { ...p, stock, flecha, color, bgColor };
     });
 
     const outputDirs = [

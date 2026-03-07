@@ -118,7 +118,10 @@ const handleDescargar = async () => {
             {searchResults.map(p => (
               <div key={p.sku} className="p-5 bg-white dark:bg-white/5 rounded-2xl border border-slate-100 dark:border-white/5 flex items-center justify-between" title={`Línea: ${p.linea}`}>
                 <div className="flex-1 min-w-0 mr-4">
-                  <span className="text-[10px] font-bold text-primary px-2 py-0.5 bg-primary/10 rounded-lg">{p.sku}</span>
+                  <div className="flex gap-2 flex-wrap">
+                    <span className="text-[10px] font-bold text-primary px-2 py-0.5 bg-primary/10 rounded-lg">{p.sku}</span>
+                    {p.ean && <span className="text-[10px] font-bold text-slate-500 px-2 py-0.5 bg-slate-100 dark:bg-white/10 rounded-lg">EAN: {p.ean}</span>}
+                  </div>
                   <p className="font-bold truncate mt-1">{p.nombre}</p>
                 </div>
                 <div className="text-right">
