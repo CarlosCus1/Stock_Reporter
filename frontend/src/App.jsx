@@ -105,7 +105,7 @@ const handleDescargar = async () => {
           <div className="p-6 flex items-center gap-4 border-b border-slate-200 dark:border-white/5">
             <span className="material-symbols-outlined text-primary text-3xl">search</span>
             <input 
-              autoFocus className="flex-1 bg-transparent border-none text-3xl font-bold focus:ring-0 outline-none h-14"
+              autoFocus className="flex-1 bg-transparent border-none text-xl font-bold focus:ring-0 outline-none h-12"
               placeholder="SKU, EAN o nombre..." value={ui.searchTerm}
               title="Ingrese al menos 2 caracteres para buscar"
               onChange={(e) => setUi(prev => ({ ...prev, searchTerm: e.target.value }))}
@@ -119,11 +119,11 @@ const handleDescargar = async () => {
               <div key={p.sku} className="p-5 bg-white dark:bg-white/5 rounded-2xl border border-slate-100 dark:border-white/5" title={`Línea: ${p.linea}`}>
                 <div className="flex items-start justify-between mb-3">
                   <div>
-                    <p className="text-2xl font-bold text-primary">{p.sku}</p>
+                    <p className="text-xl font-bold text-primary">{p.sku}</p>
                     {p.ean && <p className="text-xs text-slate-400 font-mono mt-1">EAN: {p.ean}</p>}
                   </div>
                   <div className="text-right">
-                    <p className="text-2xl font-bold">{p.stock}</p>
+                    <p className="text-xl font-bold">{p.stock}</p>
                     <p className="text-[9px] uppercase opacity-50">{ui.metadata.almacen}</p>
                   </div>
                 </div>
