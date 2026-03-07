@@ -127,7 +127,7 @@ function App() {
   <div className="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col relative transition-colors duration-500">
       {/* SEARCH OVERLAY */}
       {ui.isSearching && (
-        <div className="fixed inset-0 z-50 bg-white/98 dark:bg-background-dark backdrop-blur-md flex flex-col animate-in fade-in duration-200">
+        <div className="fixed inset-0 z-50 bg-white dark:bg-background-dark flex flex-col animate-in fade-in duration-200">
           <div className="p-6 flex items-center gap-4 border-b border-slate-200 dark:border-white/5">
             <span className="material-symbols-outlined text-primary text-3xl">search</span>
             <div className="flex-1">
@@ -166,7 +166,7 @@ function App() {
       )}
 
       {/* HEADER */}
-      <header className="flex items-center p-4 justify-between border-b sticky top-0 z-40 bg-white/80 dark:bg-background-dark backdrop-blur-sm border-slate-200 dark:border-white/5">
+      <header className="flex items-center p-4 justify-between border-b sticky top-0 z-40 bg-white dark:bg-background-dark border-slate-200 dark:border-white/5">
         <div className="flex size-11 shrink-0 items-center overflow-hidden rounded-2xl bg-primary/10 p-1">
           <img src="favicon.svg" alt="Logo" className="h-full w-full object-contain" />
         </div>
@@ -307,7 +307,7 @@ function App() {
       </main>
 
       {/* NAV INFERIOR */}
-      <nav className="fixed bottom-0 left-0 right-0 bg-white/90 dark:bg-background-dark backdrop-blur-sm border-t border-slate-200 dark:border-white/5 px-6 pb-10 pt-4 z-40">
+      <nav className="fixed bottom-0 left-0 right-0 bg-white dark:bg-background-dark border-t border-slate-200 dark:border-white/5 px-6 pb-10 pt-4 z-40">
         <div className="max-w-md mx-auto flex justify-between items-center px-4">
           <button onClick={() => setActiveTab('pulso')} className={`flex flex-col items-center gap-1.5 transition-all ${activeTab === 'pulso' ? 'text-primary' : 'opacity-40'}`} title="Panel de Descargas">
             <span className="material-symbols-outlined text-[26px]">analytics</span>
