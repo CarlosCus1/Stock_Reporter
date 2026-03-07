@@ -95,10 +95,10 @@ const handleDescargar = async () => {
   } catch (err) {
     alert(err.message);
   }
-}
+  }
 
-    <div className="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col relative transition-colors duration-500">
-      
+  return (
+  <div className="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col relative transition-colors duration-500">
       {/* SEARCH OVERLAY */}
       {ui.isSearching && (
         <div className="fixed inset-0 z-50 bg-white/98 dark:bg-background-dark/98 backdrop-blur-xl flex flex-col animate-in fade-in duration-200">
