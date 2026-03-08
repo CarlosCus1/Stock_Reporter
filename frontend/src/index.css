@@ -41,26 +41,43 @@ body {
   color: #f1f5f9; 
 }
 
-/* UI PLANA - CERO SOMBRAS (SHADOWS) */
+/* UI PLANA - CERO SOMBRAS (SHADOWS) EN MÓVIL, SUAVES EN PC */
 .btn-primary {
-  @apply w-full h-14 bg-primary text-slate-900 font-bold rounded-2xl flex items-center justify-center gap-2 border-none cursor-pointer active:scale-95 transition-transform;
+  @apply w-full h-14 bg-primary text-slate-900 font-bold rounded-2xl flex items-center justify-center gap-2 border-none cursor-pointer active:scale-95 transition-all hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20;
 }
 
 .input-field {
   @apply w-full pl-12 pr-4 h-14 bg-white border border-slate-200 rounded-2xl focus:outline-none 
-         focus:border-primary text-slate-900 transition-all;
+         focus:border-primary text-slate-900 transition-all hover:border-slate-300;
 }
 .dark .input-field { 
-  @apply bg-[#1a2a2c] border-[#2a3a3c] text-white focus:border-primary; 
+  @apply bg-[#1a2a2c] border-[#2a3a3c] text-white focus:border-primary hover:border-[#3a4a4c]; 
 }
 
-.chip { @apply px-5 py-2.5 rounded-full font-bold text-sm border-none cursor-pointer active:scale-95 transition-transform; }
-.chip-active { @apply bg-primary text-slate-900; }
-.chip-inactive { @apply bg-white border border-slate-200 text-slate-600; }
-.dark .chip-inactive { @apply bg-[#1a2a2c] border-[#2a3a3c] text-slate-400; }
+.chip { @apply px-5 py-2.5 rounded-full font-bold text-sm border-none cursor-pointer active:scale-95 transition-all; }
+.chip-active { @apply bg-primary text-slate-900 shadow-md shadow-primary/20; }
+.chip-inactive { @apply bg-white border border-slate-200 text-slate-600 hover:border-primary/50 hover:text-primary; }
+.dark .chip-inactive { @apply bg-[#1a2a2c] border-[#2a3a3c] text-slate-400 hover:border-primary/50 hover:text-primary; }
 
-.card-success { @apply bg-emerald-50 border border-emerald-100 rounded-3xl p-8; }
+.card-success { @apply bg-emerald-50 border border-emerald-100 rounded-3xl p-8 md:p-12; }
 .dark .card-success { @apply bg-[#1a2a2c] border-emerald-900/30; }
 
-/* Ocultar scrollbar */
-::-webkit-scrollbar { width: 0px; }
+/* SCROLLBAR VISIBLE - INDICADOR DE CONTENIDO */
+::-webkit-scrollbar { 
+  width: 10px; 
+}
+::-webkit-scrollbar-track { 
+  @apply bg-slate-200/30 dark:bg-slate-800/30; 
+}
+::-webkit-scrollbar-thumb { 
+  @apply bg-slate-300 dark:bg-slate-600 rounded-full border-2 border-transparent bg-clip-padding; 
+}
+::-webkit-scrollbar-thumb:hover { 
+  @apply bg-slate-400 dark:bg-slate-500; 
+}
+
+/* Forzar scrollbar en contenedores principales */
+.overflow-y-auto {
+  scrollbar-gutter: stable;
+}
+

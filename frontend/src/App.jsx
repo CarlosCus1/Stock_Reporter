@@ -136,73 +136,95 @@ function App() {
     } catch (err) { alert(err.message); }
   }
 
+  useEffect(() => {
+    if (ui.reporteGenerado) {
+      setTimeout(() => {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+      }, 100);
+    }
+  }, [ui.reporteGenerado])
+
   return (
     <div className="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col relative">
       
-      {/* SEARCH OVERLAY - TOTALMENTE PLANO */}
+      {/* SEARCH OVERLAY - MODAL EN PC, FULLSCREEN EN MÓVIL */}
       {ui.isSearching && (
-        <div className="fixed inset-0 z-50 bg-white dark:bg-[#102022] flex flex-col animate-in fade-in duration-200">
-          <div className="p-6 flex items-center gap-4 border-b border-slate-200 dark:border-slate-800">
-            <span className="material-symbols-outlined text-primary text-3xl">search</span>
-            <input 
-              autoFocus className="flex-1 bg-transparent border-none text-2xl font-bold focus:ring-0 outline-none"
-              placeholder="Buscar..." value={ui.searchTerm}
-              onChange={(e) => setUi(prev => ({ ...prev, searchTerm: e.target.value }))}
-            />
-            <button onClick={() => setUi(prev => ({ ...prev, isSearching: false, searchTerm: '' }))} className="size-12 rounded-full bg-slate-100 dark:bg-[#1a2a2c] flex items-center justify-center">
-              <span className="material-symbols-outlined">close</span>
-            </button>
-          </div>
-          <div className="flex-1 overflow-y-auto p-6 space-y-4">
-            {ui.searchTerm && ui.searchTerm.length >= 2 && (
-              <div className="flex items-center justify-between text-xs text-slate-400 dark:text-slate-500 mb-2 px-1">
-                <span>{searchResults.length} resultado{searchResults.length !== 1 ? 's' : ''}</span>
-                <span className={`flex items-center gap-1 ${ui.isStale ? 'text-red-500' : ''}`}>
-                  <span className="material-symbols-outlined text-[14px]">schedule</span>
-                  Actualizado: {ui.metadata.lastUpdated ? new Date(ui.metadata.lastUpdated).toLocaleString('es-PE', { day: '2-digit', month: '2-digit', year: '2-digit', hour: '2-digit', minute: '2-digit' }) : 'N/A'}
-                  {ui.isStale && <span className="text-red-500 font-bold ml-1">⚠</span>}
-                </span>
-              </div>
-            )}
-            {searchResults.map(p => (
-              <div key={p.sku} className="p-5 bg-white dark:bg-[#1a2a2c] rounded-2xl border border-slate-100 dark:border-slate-800 flex items-center justify-between">
-                <div className="flex-1 min-w-0 mr-4">
-                  <div className="flex items-center gap-3 mb-1.5">
-                    <span className="text-[13px] font-black text-primary px-2.5 py-1 bg-primary/10 rounded-lg border border-primary/20">{p.sku}</span>
-                    {p.ean && <span className="text-[10px] font-bold text-slate-400 dark:text-slate-500 tracking-tight">EAN: {p.ean}</span>}
-                  </div>
-                  <p className="font-bold truncate text-sm text-slate-800 dark:text-slate-200">{p.nombre}</p>
-                  <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mt-1 opacity-70">{p.linea}</p>
+        <div className="fixed inset-0 z-50 bg-white/80 dark:bg-black/60 backdrop-blur-sm flex flex-col items-center justify-start md:pt-16 animate-in fade-in duration-200">
+          <div className="w-full h-full md:h-[75vh] md:max-w-3xl bg-white dark:bg-[#102022] flex flex-col md:rounded-3xl md:shadow-2xl md:border md:border-slate-200 dark:md:border-slate-800 overflow-hidden">
+            <div className="p-6 flex items-center gap-4 border-b border-slate-200 dark:border-slate-800">
+              <span className="material-symbols-outlined text-primary text-3xl">search</span>
+              <input 
+                autoFocus className="flex-1 bg-transparent border-none text-2xl font-bold focus:ring-0 outline-none"
+                placeholder="Buscar..." value={ui.searchTerm}
+                onChange={(e) => setUi(prev => ({ ...prev, searchTerm: e.target.value }))}
+              />
+              <button onClick={() => setUi(prev => ({ ...prev, isSearching: false, searchTerm: '' }))} className="size-12 rounded-full bg-slate-100 dark:bg-[#1a2a2c] flex items-center justify-center hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+                <span className="material-symbols-outlined">close</span>
+              </button>
+            </div>
+            <div className="flex-1 overflow-y-auto p-6 space-y-4">
+              {ui.searchTerm && ui.searchTerm.length >= 2 && (
+                <div className="flex items-center justify-between text-xs text-slate-400 dark:text-slate-500 mb-2 px-1">
+                  <span>{searchResults.length} resultado{searchResults.length !== 1 ? 's' : ''}</span>
+                  <span className={`flex items-center gap-1 ${ui.isStale ? 'text-red-500' : ''}`}>
+                    <span className="material-symbols-outlined text-[14px]">schedule</span>
+                    Actualizado: {ui.metadata.lastUpdated ? new Date(ui.metadata.lastUpdated).toLocaleString('es-PE', { day: '2-digit', month: '2-digit', year: '2-digit', hour: '2-digit', minute: '2-digit' }) : 'N/A'}
+                    {ui.isStale && <span className="text-red-500 font-bold ml-1">⚠</span>}
+                  </span>
                 </div>
-                <div className="text-right shrink-0">
-                  <div className="flex items-center gap-2 justify-end">
-                    <span className="text-2xl font-black text-slate-900 dark:text-white">{p.stock}</span>
-                    <span className="text-lg">{p.alerta}</span>
+              )}
+              {searchResults.map(p => (
+                <div key={p.sku} className="p-5 bg-white dark:bg-[#1a2a2c] rounded-2xl border border-slate-100 dark:border-slate-800 flex items-center justify-between hover:border-primary/50 transition-colors group">
+                  <div className="flex-1 min-w-0 mr-4">
+                    <div className="flex items-center gap-3 mb-1.5">
+                      <span className="text-[13px] font-black text-primary px-2.5 py-1 bg-primary/10 rounded-lg border border-primary/20 group-hover:bg-primary group-hover:text-slate-900 transition-colors">{p.sku}</span>
+                      {p.ean && <span className="text-[10px] font-bold text-slate-400 dark:text-slate-500 tracking-tight">EAN: {p.ean}</span>}
+                    </div>
+                    <p className="font-bold truncate text-sm text-slate-800 dark:text-slate-200">{p.nombre}</p>
+                    <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mt-1 opacity-70">{p.linea}</p>
                   </div>
-                  <p className="text-[9px] uppercase font-black text-slate-400 tracking-tighter">{ui.metadata.almacen}</p>
+                  <div className="text-right shrink-0">
+                    <div className="flex items-center gap-2 justify-end">
+                      <span className="text-2xl font-black text-slate-900 dark:text-white">{p.stock}</span>
+                      <span className="text-lg">{p.alerta}</span>
+                    </div>
+                    <p className="text-[9px] uppercase font-black text-slate-400 tracking-tighter">{ui.metadata.almacen}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+              {ui.searchTerm && ui.searchTerm.length >= 2 && searchResults.length === 0 && (
+                <div className="py-12 text-center">
+                  <span className="material-symbols-outlined text-5xl opacity-20 mb-4">search_off</span>
+                  <p className="text-slate-400 font-bold">No se encontraron productos</p>
+                </div>
+              )}
+            </div>
           </div>
+          {/* Clic fuera para cerrar en PC */}
+          <div className="hidden md:block absolute inset-0 -z-10" onClick={() => setUi(prev => ({ ...prev, isSearching: false, searchTerm: '' }))}></div>
         </div>
       )}
 
-      {/* HEADER - TOTALMENTE PLANO */}
-      <header className="flex items-center p-4 justify-between border-b sticky top-0 z-40 bg-background-light dark:bg-background-dark border-slate-200 dark:border-slate-800">
-        <div className="flex size-11 shrink-0 items-center overflow-hidden rounded-2xl bg-primary/10 p-1">
-          <img src="favicon.svg" alt="Logo" className="h-full w-full object-contain" />
+      {/* HEADER - OPTIMIZADO PARA PC */}
+      <header className="border-b sticky top-0 z-40 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-slate-200 dark:border-slate-800">
+        <div className="max-w-4xl mx-auto flex items-center p-4 justify-between w-full">
+          <div className="flex size-11 shrink-0 items-center overflow-hidden rounded-2xl bg-primary/10 p-1">
+            <img src="favicon.svg" alt="Logo" className="h-full w-full object-contain" />
+          </div>
+          <div className="flex flex-1 px-4 flex-col">
+            <h2 className="text-xl leading-none font-bold">StockPulse</h2>
+            <p className="text-[9px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mt-1">Inteligencia • CIPSA</p>
+          </div>
+          <div className="flex items-center gap-3">
+            <button onClick={() => setUi(prev => ({ ...prev, isSearching: true }))} className="size-11 flex items-center justify-center rounded-2xl bg-slate-100 dark:bg-[#1a2a2c] hover:bg-primary hover:text-slate-900 transition-all">
+              <span className="material-symbols-outlined">search</span>
+            </button>
+          </div>
         </div>
-        <div className="flex flex-1 px-4 flex-col">
-          <h2 className="text-xl leading-none font-bold">StockPulse</h2>
-          <p className="text-[9px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mt-1">Inteligencia • CIPSA</p>
-        </div>
-        <button onClick={() => setUi(prev => ({ ...prev, isSearching: true }))} className="size-11 flex items-center justify-center rounded-2xl bg-slate-100 dark:bg-[#1a2a2c]">
-          <span className="material-symbols-outlined">search</span>
-        </button>
       </header>
 
       {/* MAIN */}
-      <main className="flex-1 overflow-y-auto pb-32 max-w-2xl mx-auto w-full px-6">
+      <main className="flex-1 overflow-y-auto pb-32 max-w-4xl mx-auto w-full px-6">
         {activeTab === 'pulso' ? (
           <div className="animate-in fade-in slide-in-from-left-4 duration-500">
             <div className="pt-10 pb-4">
@@ -308,8 +330,8 @@ function App() {
                 {isRefreshing ? 'Actualizando...' : 'Forzar Actualización'}
               </button>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="p-6 bg-white dark:bg-[#1a2a2c] rounded-3xl border border-slate-100 dark:border-slate-800 relative group">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <div className="p-6 bg-white dark:bg-[#1a2a2c] rounded-3xl border border-slate-100 dark:border-slate-800 relative group hover:border-primary/30 transition-colors">
                 <p className="text-[10px] font-bold uppercase opacity-50 mb-2">Último Pulso</p>
                 <p className={`text-lg font-bold ${ui.metadata.lastUpdated ? (ui.isStale ? 'text-red-500 animate-pulse' : 'text-emerald-500') : 'text-slate-400'}`}>
                   {ui.metadata.lastUpdated ? new Date(ui.metadata.lastUpdated).toLocaleString('es-PE', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' }) : 'Sin datos'}
@@ -325,11 +347,11 @@ function App() {
                   <p className="text-[10px] text-red-500 font-bold mt-1">⚠ Data desactualizada</p>
                 )}
                 {/* Tooltip */}
-                <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity bg-slate-800 text-white text-xs p-2 rounded-lg w-48 z-10">
+                <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity bg-slate-800 text-white text-xs p-2 rounded-lg w-48 z-10 pointer-events-none shadow-xl border border-slate-700">
                   Hora de la última actualización del stock. Se considera desactualizado después de 1 hora.
                 </div>
               </div>
-              <div className="p-6 bg-white dark:bg-[#1a2a2c] rounded-3xl border border-slate-100 dark:border-slate-800 relative group">
+              <div className="p-6 bg-white dark:bg-[#1a2a2c] rounded-3xl border border-slate-100 dark:border-slate-800 relative group hover:border-emerald-500/30 transition-colors">
                 <p className="text-[10px] font-bold uppercase opacity-50 mb-2">Estado Bot</p>
                 <div className="flex items-center gap-2 text-emerald-500">
                   <span className="relative flex h-3 w-3">
@@ -339,30 +361,31 @@ function App() {
                   <p className="font-bold">OK</p>
                 </div>
                 {/* Tooltip */}
-                <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity bg-slate-800 text-white text-xs p-2 rounded-lg w-48 z-10">
+                <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity bg-slate-800 text-white text-xs p-2 rounded-lg w-48 z-10 pointer-events-none shadow-xl border border-slate-700">
                   Sistema operativo. El bot de GitHub Actions actualiza los datos automáticamente.
                 </div>
               </div>
-              <div className="p-6 bg-white dark:bg-[#1a2a2c] rounded-3xl border border-slate-100 dark:border-slate-800 col-span-2 relative group">
-                <div className="flex justify-between items-center">
+              
+              <div className="p-6 bg-white dark:bg-[#1a2a2c] rounded-3xl border border-slate-100 dark:border-slate-800 col-span-2 md:col-span-1 flex flex-col justify-center relative group hover:border-primary/30 transition-colors">
+                <div className="flex md:flex-col justify-between items-center md:gap-4">
                   <div className="text-center flex-1">
                     <p className="text-2xl font-bold">{ui.metadata.totalProducts}</p>
-                    <p className="text-[10px] opacity-50 uppercase">Items</p>
+                    <p className="text-[10px] opacity-50 uppercase font-bold">Items</p>
                   </div>
-                  <div className="text-center flex-1 text-red-500">
+                  <div className="text-center flex-1 text-red-500 border-x md:border-x-0 md:border-y border-slate-100 dark:border-slate-800 py-0 md:py-2 w-full">
                     <p className="text-2xl font-bold">{ui.metadata.sinStock}</p>
-                    <p className="text-[10px] opacity-50 uppercase">Agotados</p>
+                    <p className="text-[10px] opacity-50 uppercase font-bold">Agotados</p>
                   </div>
                   <div className="text-center flex-1 text-amber-500">
                     <p className="text-2xl font-bold">{ui.metadata.bajoStock}</p>
-                    <p className="text-[10px] opacity-50 uppercase">Críticos</p>
+                    <p className="text-[10px] opacity-50 uppercase font-bold">Críticos</p>
                   </div>
                 </div>
                 {/* Tooltip */}
-                <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity bg-slate-800 text-white text-xs p-2 rounded-lg w-48 z-10">
-                  <b>Items:</b> Total de productos en inventario<br/>
-                  <b>Agotados:</b> Productos con stock = 0<br/>
-                  <b>Críticos:</b> Productos por debajo del mínimo (5 cajas)
+                <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity bg-slate-800 text-white text-xs p-2 rounded-lg w-48 z-10 pointer-events-none shadow-xl border border-slate-700">
+                  <b>Items:</b> Total de productos<br/>
+                  <b>Agotados:</b> Stock = 0<br/>
+                  <b>Críticos:</b> Bajo el mínimo
                 </div>
               </div>
             </div>
