@@ -27,6 +27,7 @@ function App() {
       
       // Si se fuerza actualización, intentar obtener datos frescos del servidor
       if (forceRefresh) {
+        // Intentar primero con el servidor de actualización
         try {
           console.log('🔄 Solicitando actualización al servidor...');
           const response = await fetch(`${apiUrl}/api/stock/actualizar`, {
@@ -39,8 +40,31 @@ function App() {
           } else {
             console.warn('El servidor no pudo actualizar los datos');
           }
-        } catch (apiErr) {
-          console.warn('No se pudo conectar con el servidor de actualización:', apiErr.message);
+        } catch (err) {
+          // Si el servidor no está disponible, intentar recargar del CDN/origen
+          console.log('🔄 Servidor no disponible (' + err.message + '), recargando desde el servidor estático...');
+          try {
+            // Forzar recarga sin caché
+            const freshRes = await fetch(`${baseUrl}productos_con_stock.json?t=${Date.now()}`);
+            if (freshRes.ok) {
+              const data = await freshRes.json();
+              const lastUpdated = data.metadata?.lastUpdated ? new Date(data.metadata.lastUpdated) : null;
+              const now = new Date();
+              const oneHour = 60 * 60 * 1000;
+              const timeDiff = lastUpdated ? (now.getTime() - lastUpdated.getTime()) : null;
+              const isStale = timeDiff ? timeDiff > oneHour : false;
+              
+              setUi(prev => ({ 
+                ...prev, 
+                allProducts: data.productos || [], 
+                metadata: data.metadata || prev.metadata,
+                isStale: isStale
+              }));
+              console.log('✅ Data recargada. Minutos transcurridos:', timeDiff ? Math.round(timeDiff/60000) : 'N/A');
+            }
+          } catch (refreshErr) {
+            console.warn('No se pudo recargar los datos:', refreshErr.message);
+          }
         }
       }
       
