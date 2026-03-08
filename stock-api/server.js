@@ -9,6 +9,41 @@ path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+// ============================================
+// FUNCIÓN DE LIMPIEZA SEMANAL DE LOGS
+// ============================================
+function limpiarLogsSemanales() {
+  const logFile = path.join(__dirname, 'logs', 'descargas.json');
+  const SEMANA_MS = 7 * 24 * 60 * 60 * 1000; // 7 días en milisegundos
+  
+  try {
+    if (fs.existsSync(logFile)) {
+      const data = fs.readFileSync(logFile, 'utf8');
+      const log = JSON.parse(data);
+      
+      // Verificar última limpieza
+      const ultimaLimpieza = log.ultima_limpieza ? new Date(log.ultima_limpieza) : null;
+      const ahora = new Date();
+      
+      if (!ultimaLimpieza || (ahora - ultimaLimpieza) > SEMANA_MS) {
+        // Limpiar: solo mantener la estructura sin registros
+        const logLimpio = {
+          descargas: [],
+          ultima_limpieza: ahora.toISOString(),
+          nota: "Log limpiado automáticamente - historial de descargas"
+        };
+        fs.writeFileSync(logFile, JSON.stringify(logLimpio, null, 2));
+        console.log('🧹 Logs de descargas limpiados automáticamente (semanal)');
+      }
+    }
+  } catch (e) {
+    console.error('Error en limpieza de logs:', e.message);
+  }
+}
+
+// Ejecutar limpieza al iniciar
+limpiarLogsSemanales();
+
 // Habilitar CORS para permitir solicitudes desde el frontend
 app.use(cors());
 app.use(express.json());
@@ -214,7 +249,7 @@ app.post('/api/descargas/registrar', (req, res) => {
     
     // Guardar en archivo JSON
     const logFile = path.join(__dirname, 'logs', 'descargas.json');
-    let descargas = [];
+    let logData = { descargas: [], ultima_limpieza: null };
     
     // Crear directorio si no existe
     const logsDir = path.join(__dirname, 'logs');
@@ -226,22 +261,25 @@ app.post('/api/descargas/registrar', (req, res) => {
     if (fs.existsSync(logFile)) {
       try {
         const data = fs.readFileSync(logFile, 'utf8');
-        descargas = JSON.parse(data);
+        logData = JSON.parse(data);
+        // Asegurar estructura
+        if (!logData.descargas) logData.descargas = [];
+        if (!logData.ultima_limpieza) logData.ultima_limpieza = null;
       } catch (e) {
-        descargas = [];
+        logData = { descargas: [], ultima_limpieza: null };
       }
     }
     
     // Agregar nuevo registro
-    descargas.unshift(registro); // Agregar al inicio
+    logData.descargas.unshift(registro); // Agregar al inicio
     
     // Mantener solo últimos 1000 registros
-    if (descargas.length > 1000) {
-      descargas = descargas.slice(0, 1000);
+    if (logData.descargas.length > 1000) {
+      logData.descargas = logData.descargas.slice(0, 1000);
     }
     
     // Guardar archivo
-    fs.writeFileSync(logFile, JSON.stringify(descargas, null, 2));
+    fs.writeFileSync(logFile, JSON.stringify(logData, null, 2));
     
     console.log(`📥 Descarga registrada: ${nombre} (${email}) - ${categoria}`);
     
@@ -265,16 +303,17 @@ app.get('/api/descargas/historial', (req, res) => {
     const logFile = path.join(__dirname, 'logs', 'descargas.json');
     
     if (!fs.existsSync(logFile)) {
-      return res.json({ success: true, descargas: [], total: 0 });
+      return res.json({ success: true, descargas: [], total: 0, ultima_limpieza: null });
     }
     
     const data = fs.readFileSync(logFile, 'utf8');
-    const descargas = JSON.parse(data);
+    const logData = JSON.parse(data);
     
     res.json({
       success: true,
-      total: descargas.length,
-      descargas: descargas
+      total: logData.descargas ? logData.descargas.length : 0,
+      ultima_limpieza: logData.ultima_limpieza || null,
+      descargas: logData.descargas || []
     });
   } catch (error) {
     console.error('Error al leer historial:', error.message);
