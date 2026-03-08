@@ -23,58 +23,16 @@ function App() {
     setIsRefreshing(true)
     try {
       const baseUrl = import.meta.env.BASE_URL;
-      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001';
       
-      // Si se fuerza actualización, intentar obtener datos frescos del servidor
-      if (forceRefresh) {
-        // Intentar primero con el servidor de actualización
-        try {
-          console.log('🔄 Solicitando actualización al servidor...');
-          const response = await fetch(`${apiUrl}/api/stock/actualizar`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' }
-          });
-          if (response.ok) {
-            const result = await response.json();
-            console.log('✅ Datos actualizados desde el servidor:', result);
-          } else {
-            console.warn('El servidor no pudo actualizar los datos');
-          }
-        } catch (err) {
-          // Si el servidor no está disponible, intentar recargar del CDN/origen
-          console.log('🔄 Servidor no disponible (' + err.message + '), recargando desde el servidor estático...');
-          try {
-            // Forzar recarga sin caché
-            const freshRes = await fetch(`${baseUrl}productos_con_stock.json?t=${Date.now()}`);
-            if (freshRes.ok) {
-              const data = await freshRes.json();
-              const lastUpdated = data.metadata?.lastUpdated ? new Date(data.metadata.lastUpdated) : null;
-              const now = new Date();
-              const oneHour = 60 * 60 * 1000;
-              const timeDiff = lastUpdated ? (now.getTime() - lastUpdated.getTime()) : null;
-              const isStale = timeDiff ? timeDiff > oneHour : false;
-              
-              setUi(prev => ({ 
-                ...prev, 
-                allProducts: data.productos || [], 
-                metadata: data.metadata || prev.metadata,
-                isStale: isStale
-              }));
-              console.log('✅ Data recargada. Minutos transcurridos:', timeDiff ? Math.round(timeDiff/60000) : 'N/A');
-            }
-          } catch (refreshErr) {
-            console.warn('No se pudo recargar los datos:', refreshErr.message);
-          }
-        }
-      }
-      
-      // Agregar timestamp para evitar caché del navegador
-      const cacheBuster = `?t=${Date.now()}`
-      const res = await fetch(`${baseUrl}productos_con_stock.json${cacheBuster}`)
+      // Si forceRefresh=true, forzar descarga fresca sin caché del navegador
+      // El servidor estático (GitHub Pages) es la fuente de la verdad
+      const cacheBuster = forceRefresh ? `?t=${Date.now()}&v=${Math.random()}` : `?t=${Date.now()}`
+      const res = await fetch(`${baseUrl}productos_con_stock.json${cacheBuster}`, {
+        cache: 'no-store'
+      })
       if (res.ok) {
         const data = await res.json()
         // Verificar si la data tiene más de 1 hora de antigüedad
-        // Usar UTC para evitar problemas de zona horaria
         const lastUpdated = data.metadata?.lastUpdated ? new Date(data.metadata.lastUpdated) : null
         const now = new Date()
         const oneHour = 60 * 60 * 1000
