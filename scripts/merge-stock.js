@@ -15,6 +15,20 @@ const RED_ARROW = '✗ AGOTADO';
 const YELLOW_ARROW = '⚠ BAJO';
 const GREEN_ARROW = '✓ OK';
 
+const getFechaPeru = () => {
+  const ahora = new Date();
+  return ahora.toLocaleString('es-PE', { 
+    timeZone: 'America/Lima',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: false
+  });
+};
+
 // Normalizar SKU: mantener como string puro con sus ceros originales
 const normalizeSKU = (sku) => String(sku || '').trim();
 
@@ -116,10 +130,25 @@ async function runSnapshotUpdate() {
     const wbAll = new ExcelJS.Workbook();
     const wsResumen = wbAll.addWorksheet('Resumen');
     wsResumen.addRow(['STOCKPULSE - CONSOLIDADO']).font = { bold: true, size: 16 };
-    wsResumen.addRow(['Actualización:', new Date().toLocaleString('es-PE')]);
+    wsResumen.addRow(['Actualización:', getFechaPeru()]);
+    
+    // Calcular totales
+    const totalUnidades = fullData.reduce((acc, p) => acc + p.stock, 0);
+    const totalCodigos = fullData.length;
+    
+    wsResumen.addRow([]); // Fila vacía
+    wsResumen.addRow(['TOTAL GENERAL:', '']);
+    wsResumen.addRow(['  Códigos:', totalCodigos]).font = { bold: true };
+    wsResumen.addRow(['  Unidades:', totalUnidades]).font = { bold: true };
+    wsResumen.addRow([]); // Fila vacía
+    
+    // Totales por línea
+    wsResumen.addRow(['POR LÍNEA:', '']);
     masterMeta.lineas.forEach(lin => {
-      const total = fullData.filter(p => p.linea === lin).reduce((a, b) => a + b.stock, 0);
-      wsResumen.addRow([lin, total]);
+      const productosLinea = fullData.filter(p => p.linea === lin);
+      const codigosLinea = productosLinea.length;
+      const unidadesLinea = productosLinea.reduce((acc, p) => acc + p.stock, 0);
+      wsResumen.addRow([lin, `${codigosLinea} códigos, ${unidadesLinea.toLocaleString('es-PE')} unidades`]);
     });
 
     masterMeta.lineas.forEach(lin => {

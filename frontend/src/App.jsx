@@ -16,7 +16,7 @@ function App() {
     isValido: false, reporteGenerado: false, theme: 'light',
     isSearching: false, searchTerm: '', allProducts: [], 
     metadata: { lastUpdated: '', totalProducts: 0, almacen: 'Cipsa', sinStock: 0, bajoStock: 0, status: '...' },
-    isStale: false
+    isStale: false, emailError: ''
   })
 
   const loadProducts = async () => {
@@ -88,7 +88,11 @@ function App() {
 
   useEffect(() => {
     const emailValido = validarCorreo(form.email)
-    setUi(prev => ({ ...prev, isValido: emailValido.valido && form.nombre.length > 2 }))
+    setUi(prev => ({ 
+      ...prev, 
+      isValido: emailValido.valido && form.nombre.length > 2,
+      emailError: form.email.length > 0 && !emailValido.valido ? emailValido.mensaje : ''
+    }))
   }, [form.email, form.nombre])
 
   const handleDescargar = async () => {
@@ -246,8 +250,19 @@ function App() {
               <label className="text-[13px] font-bold uppercase opacity-60">Email Corporativo</label>
               <div className="relative flex items-center">
                 <span className="material-symbols-outlined absolute left-4 text-slate-400 z-10 pointer-events-none">mail</span>
-                <input className="input-field" placeholder="usuario@cipsa.com.pe" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} />
+                <input 
+                  className={`input-field ${ui.emailError ? 'border-red-500 focus:border-red-500' : ''}`} 
+                  placeholder="usuario@cipsa.com.pe" 
+                  value={form.email} 
+                  onChange={(e) => setForm({ ...form, email: e.target.value })} 
+                />
               </div>
+              {ui.emailError && (
+                <div className="flex items-center gap-1.5 text-red-500 text-xs font-bold animate-in fade-in duration-300">
+                  <span className="material-symbols-outlined text-[16px]">info</span>
+                  {ui.emailError}
+                </div>
+              )}
             </div>
                 <div className="flex flex-col gap-4">
                   <label className="text-[13px] font-bold uppercase opacity-60">Filtro</label>
