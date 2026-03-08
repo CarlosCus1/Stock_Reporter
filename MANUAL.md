@@ -32,7 +32,7 @@ Haz clic en el icono del pulso cardiaco 💓 en la barra inferior para ver:
 ---
 
 ## 💡 Notas Importantes
-- **Actualización**: El sistema se actualiza automáticamente **cada hora** de Lunes a Sábado (7am - 11pm).
+- **Actualización**: El sistema se actualiza automáticamente **cada hora** de Todos los días (7am - 11pm).
 - **Compatibilidad**: Recomendamos usar Google Chrome o Microsoft Edge para una mejor experiencia.
 - **Soporte**: En caso de errores, contactar con el administrador del sistema (**Carlos Cusi**).
 
