@@ -209,7 +209,11 @@ async function runSnapshotUpdate() {
       let bgColor = GREEN_BG, fontColor = 'FF065F46', estado = '✓ OK';
       if (stock === 0) { bgColor = RED_BG; fontColor = 'FFDC2626'; estado = '✗ AGOTADO'; }
       else if (stock < stockMinimo) { bgColor = YELLOW_BG; fontColor = 'FFD97706'; estado = '⚠ BAJO'; }
-      return { ...p, stock, estado, bgColor, fontColor };
+      
+      // Aseguramos que 'orden' sea un número para evitar ordenamiento lexicográfico
+      const ordenNumerico = p.orden ? parseInt(p.orden, 10) : 0;
+      
+      return { ...p, orden: ordenNumerico, stock, estado, bgColor, fontColor };
     });
 
     const outputDirs = [

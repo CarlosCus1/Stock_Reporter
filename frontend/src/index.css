@@ -1,11 +1,31 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #13daec;
-  --color-primary-dark: #0bb8cc;
-  --color-background-light: #f6f8f8;
-  --color-background-dark: #102022;
+  --color-brand-50: #f0fdfa;
+  --color-brand-100: #ccfbf1;
+  --color-brand-200: #99f6e4;
+  --color-brand-300: #5eead4;
+  --color-brand-400: #2dd4bf;
+  --color-brand-500: #14b8a6;
+  --color-brand-600: #0d9488;
+  --color-brand-700: #0f766e;
+  --color-brand-800: #115e59;
+  --color-brand-900: #134e4a;
+  --color-brand-950: #042f2e;
+
+  --color-primary: #0d9488;
+  --color-primary-dark: #2dd4bf;
+  
+  --color-background-light: #f8fafc;
+  --color-background-dark: #0f172a;
+  
+  --color-surface-light: #ffffff;
+  --color-surface-dark: #1e293b;
+
   --font-family-display: "Spline Sans", system-ui, sans-serif;
+
+  --shadow-soft: 0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-brand: 0 10px 15px -3px rgba(13, 148, 136, 0.2);
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -41,28 +61,37 @@ body {
   color: #f1f5f9; 
 }
 
-/* UI PLANA - CERO SOMBRAS (SHADOWS) EN MÓVIL, SUAVES EN PC */
+/* UI MODERNA - MEJOR CONTRASTE */
 .btn-primary {
-  @apply w-full h-14 bg-primary text-slate-900 font-bold rounded-2xl flex items-center justify-center gap-2 border-none cursor-pointer active:scale-95 transition-all hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20;
+  @apply w-full h-14 bg-primary text-white font-bold rounded-2xl flex items-center justify-center gap-2 border-none cursor-pointer active:scale-95 transition-all hover:bg-brand-700 hover:shadow-brand;
+}
+.dark .btn-primary {
+  @apply bg-brand-400 text-brand-950 hover:bg-brand-300;
 }
 
 .input-field {
   @apply w-full pl-12 pr-4 h-14 bg-white border border-slate-200 rounded-2xl focus:outline-none 
-         focus:border-primary text-slate-900 transition-all hover:border-slate-300;
+         focus:border-primary focus:ring-4 focus:ring-primary/10 text-slate-900 transition-all hover:border-slate-300;
 }
 .dark .input-field { 
-  @apply bg-[#1a2a2c] border-[#2a3a3c] text-white focus:border-primary hover:border-[#3a4a4c]; 
+  @apply bg-surface-dark border-slate-700 text-white focus:border-brand-400 focus:ring-brand-400/10 hover:border-slate-600; 
 }
 
 .chip { @apply px-5 py-2.5 rounded-full font-bold text-sm border-none cursor-pointer active:scale-95 transition-all; }
-.chip-active { @apply bg-primary text-slate-900 shadow-md shadow-primary/20; }
-.chip-inactive { @apply bg-white border border-slate-200 text-slate-600 hover:border-primary/50 hover:text-primary; }
-.dark .chip-inactive { @apply bg-[#1a2a2c] border-[#2a3a3c] text-slate-400 hover:border-primary/50 hover:text-primary; }
+.chip-active { 
+  @apply bg-brand-100 text-brand-700 shadow-sm border border-brand-200; 
+}
+.dark .chip-active {
+  @apply bg-brand-400/10 text-brand-400 border border-brand-400/30;
+}
+
+.chip-inactive { @apply bg-white border border-slate-200 text-slate-600 hover:border-brand-300 hover:text-brand-600; }
+.dark .chip-inactive { @apply bg-slate-800 border-slate-700 text-slate-400 hover:border-brand-400/50 hover:text-brand-400; }
 
 .card-success { @apply bg-emerald-50 border border-emerald-100 rounded-3xl p-8 md:p-12; }
-.dark .card-success { @apply bg-[#1a2a2c] border-emerald-900/30; }
+.dark .card-success { @apply bg-emerald-900/10 border-emerald-900/30; }
 
-/* SCROLLBAR VISIBLE - INDICADOR DE CONTENIDO */
+/* SCROLLBAR VISIBLE */
 ::-webkit-scrollbar { 
   width: 10px; 
 }
@@ -80,4 +109,3 @@ body {
 .overflow-y-auto {
   scrollbar-gutter: stable;
 }
-
