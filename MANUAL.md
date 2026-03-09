@@ -6,10 +6,10 @@
 
 ## 🔍 1. Cómo buscar un producto (Consulta Rápida)
 No necesitas descargar el Excel para una consulta rápida.
-1. Haz clic en el icono de la **Lupa** 🔍 en la parte superior derecha.
-2. Escribe el **Código SKU** o el **Nombre** del producto.
-3. El sistema te mostrará instantáneamente la cantidad disponible y el estado (🟢 OK, 🟡 Bajo, 🔴 Agotado).
-4. Podrás ver cuándo fue la última vez que se actualizó el stock en la franja superior del buscador.
+1. Haz clic en el botón **Buscar SKU** o en el icono de la **Lupa** 🔍 en la parte superior derecha.
+2. Escribe el **Código SKU**, **EAN** o el **Nombre** del producto.
+3. El sistema te mostrará hasta 15 resultados instantáneos con la cantidad disponible y el estado (🟢 OK, 🟡 Bajo, 🔴 Agotado).
+4. Podrás ver cuándo fue la última vez que se actualizó el stock en la parte superior de los resultados.
 
 ---
 
@@ -18,7 +18,7 @@ No necesitas descargar el Excel para una consulta rápida.
 2. Selecciona la **Categoría** que necesitas:
    - **Todos**: Reporte maestro con todas las líneas.
    - **Pelotas / Escolar / Representadas**: Reportes segmentados.
-3. Haz clic en **"Generar Inventario"**.
+3. Haz clic en **"Generar Inventario Real-Time"**.
 4. Una vez procesado, aparecerá el botón **"DESCARGAR AHORA"**.
    - *Nota: El archivo se descargará automáticamente con la fecha de hoy en el nombre.*
 

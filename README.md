@@ -31,6 +31,11 @@ Un dashboard ejecutivo que permite supervisar la calidad de los datos sin descar
 - Interfaz adaptativa (Modo Claro / Oscuro) con persistencia de preferencias.
 - Limpieza automática de formulario tras cada descarga para evitar descargas excesivas.
 
+### 5. Automatización Inteligente
+- Workflows de GitHub Actions con verificación de horario (7am-11pm Perú).
+- Despliegue automático inmediato tras generación de reportes.
+- Schedule: Lunes a Domingo.
+
 ---
 
 ## 🛠️ Arquitectura Técnica
@@ -78,7 +83,7 @@ Stock_Reporter/
 
 ## 👨‍💻 Autoría y Mantenimiento
 - **Desarrollador**: Carlos Cusi
-- **Versión**: 2.3.0
+- **Versión**: 2.4.0
 - **Entorno**: Almacén Villa El Salvador (VES)
 
 ---
