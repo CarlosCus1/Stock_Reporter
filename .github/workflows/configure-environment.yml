@@ -29,12 +29,12 @@ jobs:
                 },
                 // Optionally restrict to specific branches
                 // branch_policy can be: "all", "protected", or "selected"
-                branch_policy: "protected"
+                branch_policy: "all"
               });
 
               console.log(`✅ Environment '${environmentName}' configured successfully!`);
-              console.log('   - Required reviewers: NONE (manual approval still required via GitHub UI)');
-              console.log('   - Branch policy: protected branches only');
+              console.log('   - Required reviewers: NONE');
+              console.log('   - Branch policy: all branches allowed');
               console.log('');
               console.log('⚠️  NOTE: To add required reviewers, go to:');
               console.log(`   Settings > Environments > ${environmentName} > Add reviewers`);
