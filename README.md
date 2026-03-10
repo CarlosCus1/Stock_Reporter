@@ -34,7 +34,7 @@ Un dashboard ejecutivo que permite supervisar la calidad de los datos sin descar
 ### 5. Automatización Inteligente
 - Workflows de GitHub Actions con verificación de horario (7am-11pm Perú).
 - Despliegue automático inmediato tras generación de reportes.
-- Schedule: Lunes a Domingo.
+- Schedule: Domingo a Sábado.
 
 ---
 

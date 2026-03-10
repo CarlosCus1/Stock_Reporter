@@ -29,13 +29,13 @@ jobs:
             HOUR_PERU=$((HOUR_PERU + 24))
           fi
           
-          # Verificar: Lunes a Sábado (1-6) y hora 7-22 (7am-11pm)
-          if [ "$DAY_OF_WEEK" -ge 1 ] && [ "$DAY_OF_WEEK" -le 6 ] && [ "$HOUR_PERU" -ge 7 ] && [ "$HOUR_PERU" -lt 23 ]; then
+          # Verificar: Domingo a Sábado (1-7) y hora 7-23 (7am-11pm)
+          if [ "$DAY_OF_WEEK" -ge 1 ] && [ "$DAY_OF_WEEK" -le 7 ] && [ "$HOUR_PERU" -ge 7 ] && [ "$HOUR_PERU" -lt 23 ]; then
             echo "should_run=true" >> $GITHUB_OUTPUT
             echo "✅ Ejecutando: Hora Perú = $HOUR_PERU, Día = $DAY_OF_WEEK"
           else
             echo "should_run=false" >> $GITHUB_OUTPUT
-            echo "⏹️  Fuera de horario: Hora Perú = $HOUR_PERU, Día = $DAY_OF_WEEK (Solo Lun-Sáb 7am-11pm)"
+            echo "⏹️  Fuera de horario: Hora Perú = $HOUR_PERU, Día = $DAY_OF_WEEK (Solo Dom-Sáb 7am-11pm)"
           fi
 
   generate-reports:
@@ -85,18 +85,3 @@ jobs:
         with:
           commit_message: "📊 Auto-update: Stock Snapshot $(date +'%d-%m-%y %H:%M')"
       
-  trigger-deploy:
-    needs: generate-reports
-    runs-on: ubuntu-latest
-    steps:
-      - name: Trigger Deploy workflow
-        uses: actions/github-script@v7
-        if: github.event_name == 'schedule'
-        with:
-          script: |
-            await github.rest.repos.createDispatchEvent({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              event_type: 'deploy-trigger',
-              client_payload: {},
-            });
