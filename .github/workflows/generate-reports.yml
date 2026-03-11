@@ -97,10 +97,17 @@ jobs:
             frontend/public/reports/*.xlsx
             frontend/public/productos_con_stock.json
 
+      - name: Trigger Deploy
+        if: steps.autocommit.outputs.changes_detected == 'true'
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          event-type: deploy-trigger
+
       - name: Log Commit Status
         run: |
           if ('${{ steps.autocommit.outputs.changes_detected }}' == 'true'); then
-            echo "✅ Reportes actualizados y subidos. El despliegue se iniciará."
+            echo "✅ Reportes actualizados y subidos. El despliegue se inició automáticamente."
           else
             echo "ℹ️ No se detectaron cambios en los reportes. No se requiere un nuevo despliegue."
           fi
