@@ -32,6 +32,17 @@ jobs:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
+      - name: Log Trigger Information
+        run: |
+          echo "🚀 Deploy workflow triggered"
+          echo "Event: ${{ github.event_name }}"
+          echo "Repository: ${{ github.repository }}"
+          echo "Branch: ${{ github.ref }}"
+          echo "SHA: ${{ github.sha }}"
+          if [ "${{ github.event_name }}" = "workflow_run" ]; then
+            echo "Triggered by workflow: ${{ github.event.workflow_run.name }}"
+            echo "Workflow conclusion: ${{ github.event.workflow_run.conclusion }}"
+          fi
       - name: Checkout
         uses: actions/checkout@v4
       

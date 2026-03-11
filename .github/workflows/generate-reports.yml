@@ -9,6 +9,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -46,6 +48,9 @@ jobs:
     # Ejecutar en dispatch manual O si el schedule es válido
     if: github.event_name == 'workflow_dispatch' || needs.check-schedule.outputs.should_run == 'true'
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
     
     steps:
       - name: Checkout repository
@@ -103,17 +108,43 @@ jobs:
             frontend/public/productos_con_stock.json
             .deploy-trigger
 
-      - name: Always Trigger Deploy
-        uses: peter-evans/repository-dispatch@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          event-type: deploy-trigger
-
-      - name: Log Commit Status
+      - name: Build Frontend
         run: |
-          if ('${{ steps.autocommit.outputs.changes_detected }}' == 'true'); then
-            echo "✅ Reportes actualizados y subidos. El despliegue se inició automáticamente."
+          echo "🔨 Building frontend..."
+          cd frontend
+          npm install
+          npm run build
+
+      - name: Copy Data Files to Dist
+        run: |
+          echo "🔄 Copying data files to dist..."
+          if [ -f "frontend/public/productos_con_stock.json" ]; then
+            cp frontend/public/productos_con_stock.json frontend/dist/
+            echo "✅ productos_con_stock.json copied"
           else
-            echo "ℹ️ No se detectaron cambios en los reportes, pero se ejecutó el despliegue por seguridad."
+            echo "❌ Warning: productos_con_stock.json not found"
           fi
+          if [ -d "frontend/public/reports" ]; then
+            cp -r frontend/public/reports frontend/dist/
+            echo "✅ reports directory copied"
+          else
+            echo "❌ Warning: reports directory not found"
+          fi
+          echo "📋 Dist contents:"
+          ls -la frontend/dist/
+
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./frontend/dist
+          publish_branch: gh-pages
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Log Status
+        run: |
+          echo "✅ Reportes generados y deploy completado"
+          echo "📊 Archivos publicados en gh-pages"
 
