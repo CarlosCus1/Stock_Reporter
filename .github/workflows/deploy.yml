@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'frontend/public/productos_con_stock.json'
+      - 'frontend/public/reports/**'
   workflow_run:
     workflows: ['Generar Reportes de Stock']
     types: [completed]
