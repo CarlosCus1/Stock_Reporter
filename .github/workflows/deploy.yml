@@ -10,6 +10,7 @@ on:
   workflow_run:
     workflows: ['Generar Reportes de Stock']
     types: [completed]
+    branches: [main]
   workflow_dispatch:
   repository_dispatch:
     types: [deploy-trigger]
