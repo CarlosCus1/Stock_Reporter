@@ -41,3 +41,6 @@ Data/productos_con_stock.json
 
 # Mantener logs de descargas (se limpia semanalmente)
 !stock-api/logs/
+
+# Archivo de trigger para workflows (se actualiza frecuentemente)
+.deploy-trigger

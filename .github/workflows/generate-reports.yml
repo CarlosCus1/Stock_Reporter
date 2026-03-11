@@ -86,6 +86,11 @@ jobs:
 
           echo "✅ All files generated successfully"
 
+      - name: Create Deploy Trigger File
+        run: |
+          echo "$(date +'%Y-%m-%d %H:%M:%S' -d '-5 hours')" > .deploy-trigger
+          echo "🔄 Deploy trigger updated"
+
       - name: Commit and Push Report Changes
         id: autocommit
         uses: stefanzweifel/git-auto-commit-action@v5
@@ -96,6 +101,7 @@ jobs:
             Data/*.json
             frontend/public/reports/*.xlsx
             frontend/public/productos_con_stock.json
+            .deploy-trigger
 
       - name: Always Trigger Deploy
         uses: peter-evans/repository-dispatch@v2

@@ -7,6 +7,7 @@ on:
     paths:
       - 'frontend/public/productos_con_stock.json'
       - 'frontend/public/reports/**'
+      - '.deploy-trigger'
   workflow_run:
     workflows: ['Generar Reportes de Stock']
     types: [completed]
@@ -51,20 +52,32 @@ jobs:
 
       - name: Copy static files to dist
         run: |
+          echo "🔍 Checking for files to copy..."
+          ls -la frontend/public/
+
           # Copy static data files if they exist
           if [ -f "frontend/public/productos_con_stock.json" ]; then
             echo "✅ Copying productos_con_stock.json"
             cp frontend/public/productos_con_stock.json frontend/dist/
+            echo "📄 File copied successfully"
+            head -n 5 frontend/public/productos_con_stock.json
           else
-            echo "⚠️  Warning: productos_con_stock.json not found"
+            echo "❌ ERROR: productos_con_stock.json not found"
+            exit 1
           fi
 
           if [ -d "frontend/public/reports" ]; then
             echo "✅ Copying reports directory"
             cp -r frontend/public/reports frontend/dist/
+            echo "📁 Reports directory copied successfully"
+            ls -la frontend/dist/reports/
           else
-            echo "⚠️  Warning: reports directory not found"
+            echo "❌ ERROR: reports directory not found"
+            exit 1
           fi
+
+          echo "📋 Final contents of dist:"
+          ls -la frontend/dist/
 
       - name: Deploy to GitHub Pages
         id: deploy
