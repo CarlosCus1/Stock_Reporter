@@ -100,7 +100,7 @@ async function processExcelFromBuffer(buffer) {
       console.log(`[DIAGNOSTIC] Row ${i}: SKU='${sku}', Almacen='${almacen}', Disponible='${disponible}'`);
     }
 
-    if (sku && almacen === 'VES') {
+    if (sku && (almacen === 'VES' || almacen === '')) {
       stockMap[sku] = (stockMap[sku] || 0) + disponible;
     }
   }
