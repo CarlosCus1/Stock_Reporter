@@ -158,16 +158,16 @@ jobs:
 
             if [ "$PRODUCT_COUNT" -eq 0 ]; then
               echo "⚠️  No products found, checking for backup data..."
-              if [ -f "Data/productos_con_stock.json" ]; then
+              if [ -f "frontend/public/productos_con_stock.json" ]; then
                 echo "✅ Using existing productos_con_stock.json as fallback"
-                cp Data/productos_con_stock.json Data/data_stock.json
+                cp frontend/public/productos_con_stock.json Data/data_stock.json
               fi
             fi
           else
             echo "⚠️  data_stock.json not found, checking for existing data..."
-            if [ -f "Data/productos_con_stock.json" ]; then
+            if [ -f "frontend/public/productos_con_stock.json" ]; then
               echo "✅ Using existing productos_con_stock.json"
-              cp Data/productos_con_stock.json Data/data_stock.json
+              cp frontend/public/productos_con_stock.json Data/data_stock.json
             else
               echo "❌ No stock data available"
               exit 1
