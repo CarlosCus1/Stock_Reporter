@@ -160,14 +160,34 @@ jobs:
               echo "⚠️  No products found, checking for backup data..."
               if [ -f "frontend/public/productos_con_stock.json" ]; then
                 echo "✅ Using existing productos_con_stock.json as fallback"
-                cp frontend/public/productos_con_stock.json Data/data_stock.json
+                node -e "
+                  const fs = require('fs');
+                  const data = JSON.parse(fs.readFileSync('frontend/public/productos_con_stock.json', 'utf8'));
+                  const stockMap = {};
+                  data.productos.forEach(p => { stockMap[p.sku] = p.stock; });
+                  fs.writeFileSync('Data/data_stock.json', JSON.stringify({
+                    lastUpdate: new Date().toISOString(),
+                    stock: stockMap,
+                    metadata: { totalProducts: Object.keys(stockMap).length, source: 'FALLBACK' }
+                  }, null, 2));
+                "
               fi
             fi
           else
             echo "⚠️  data_stock.json not found, checking for existing data..."
             if [ -f "frontend/public/productos_con_stock.json" ]; then
               echo "✅ Using existing productos_con_stock.json"
-              cp frontend/public/productos_con_stock.json Data/data_stock.json
+              node -e "
+                const fs = require('fs');
+                const data = JSON.parse(fs.readFileSync('frontend/public/productos_con_stock.json', 'utf8'));
+                const stockMap = {};
+                data.productos.forEach(p => { stockMap[p.sku] = p.stock; });
+                fs.writeFileSync('Data/data_stock.json', JSON.stringify({
+                  lastUpdate: new Date().toISOString(),
+                  stock: stockMap,
+                  metadata: { totalProducts: Object.keys(stockMap).length, source: 'FALLBACK' }
+                }, null, 2));
+              "
             else
               echo "❌ No stock data available"
               exit 1
