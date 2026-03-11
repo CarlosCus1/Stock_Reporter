@@ -6,6 +6,14 @@ on:
     # Lunes a Domingo: 7am a 11pm hora Perú (GMT-5)
     # Se ejecuta cada hora, el script check-schedule verifica el horario
     - cron: '0 * * * *'
+  push:
+    branches:
+      - main
+    paths:
+      - 'Data/**'
+      - 'scripts/**'
+      - 'frontend/public/**'
+      - 'reports/**'
 
 permissions:
   contents: write
@@ -43,7 +51,7 @@ jobs:
 
   generate-reports:
     needs: check-schedule
-    if: needs.check-schedule.outputs.should_run == 'true'
+    if: needs.check-schedule.outputs.should_run == 'true' || github.event_name == 'push'
     runs-on: ubuntu-latest
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -58,27 +66,47 @@ jobs:
           node-version: '20'
           cache: 'npm'
       
+      - name: Check if should generate reports
+        id: should_generate
+        run: |
+          if [ "${{ github.event_name }}" == "schedule" ]; then
+            echo "Generating reports from schedule" >&2
+            echo "generate_reports=true" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "Manual trigger - generating reports" >&2
+            echo "generate_reports=true" >> $GITHUB_OUTPUT
+          else
+            echo "Push event - triggering deploy only" >&2
+            echo "generate_reports=false" >> $GITHUB_OUTPUT
+          fi
+      
       - name: Install dependencies
+        if: steps.should_generate.outputs.generate_reports == 'true'
         run: |
           npm install xlsx exceljs
       
       - name: Convert codigos_generales.xlsx to JSON
+        if: steps.should_generate.outputs.generate_reports == 'true'
         run: node scripts/convert-codigos.js
       
       - name: Download latest stock from appweb
+        if: steps.should_generate.outputs.generate_reports == 'true'
         run: node scripts/download-stock.js
         env:
           STOCK_URL: ${{ secrets.STOCK_URL }}
       
       - name: Merge data and generate Snapshots
+        if: steps.should_generate.outputs.generate_reports == 'true'
         run: node scripts/merge-stock.js
       
       - name: Configure Git
+        if: steps.should_generate.outputs.generate_reports == 'true'
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
       
       - name: Commit generated reports
+        if: steps.should_generate.outputs.generate_reports == 'true'
         run: |
           git add reports/*.xlsx || true
           git add Data/*.json || true
@@ -86,6 +114,7 @@ jobs:
           git add frontend/public/productos_con_stock.json || true
         
       - name: Push changes
+        if: steps.should_generate.outputs.generate_reports == 'true'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "📊 Auto-update: Stock Snapshot"
