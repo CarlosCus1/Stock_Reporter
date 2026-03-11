@@ -70,7 +70,7 @@ jobs:
       
       - name: Download Stock Data
         env:
-          STOCK_URL: ${{ secrets.STOCK_API_URL }}
+          STOCK_URL: 'http://appweb.cipsa.com.pe:8054/AlmacenStock/DownLoadFiles?value={%22%20%22:%22%22,%22parametroX1%22:%220%22,%22parametroX2%22:%220%22}'
         run: node scripts/download-stock.js
       
       - name: Verify Stock Data

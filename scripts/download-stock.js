@@ -21,15 +21,14 @@ async function processExcelFromBuffer(buffer) {
   console.log('📊 Procesando archivo Excel...');
 
   const workbook = xlsx.read(buffer, { type: 'buffer' });
-  const sheetName = "ReportGenerado";
-  const sheet = workbook.Sheets[sheetName];
+  const sheet = workbook.Sheets[workbook.SheetNames[0]]; // Usar primera hoja
 
   if (!sheet) {
-    console.error(`❌ ERROR: No se pudo encontrar la hoja '${sheetName}' en el archivo Excel.`);
-    console.error(`   Hojas disponibles: ${workbook.SheetNames.join(', ')}`);
-    // Si la hoja no se encuentra, salimos para evitar procesar datos incorrectos.
-    process.exit(1); 
+    console.error(`❌ ERROR: No se pudo encontrar ninguna hoja en el archivo Excel.`);
+    process.exit(1);
   }
+
+  console.log(`📋 Hoja procesada: ${workbook.SheetNames[0]}`);
 
   // Leer como texto formateado para preservar ceros (02210)
   const rawData = xlsx.utils.sheet_to_json(sheet, { header: 1, raw: false });
@@ -37,24 +36,72 @@ async function processExcelFromBuffer(buffer) {
 
   console.log(`📋 Total de filas en Excel: ${rawData.length}`);
 
-  rawData.forEach((row, index) => {
-    if (index === 0) return; // Saltar cabecera
-
-    // Mapeo basado en la estructura estándar de CIPSA:
-    // Columna 1: SKU | Columna 9: Almacen | Columna 18: Disponible
-    const sku = String(row[1] || '').trim(); // Sin eliminar ceros - preservar como viene
-    const almacen = String(row[9] || '').trim().toUpperCase();
-    const disponible = parseInt(row[18], 10) || 0;
-
-    // TEMP LOG: Imprimir las primeras 5 filas para diagnóstico
-    if (index > 0 && index < 6) {
-      console.log(`[DIAGNOSTIC] Row ${index}: SKU='${sku}', Almacen='${almacen}', Disponible='${disponible}', RawRow=${JSON.stringify(row)}`);
+  // Encontrar fila de inicio de datos
+  let dataStartRow = -1;
+  for (let i = 0; i < Math.min(20, rawData.length); i++) {
+    const row = rawData[i];
+    if (row && row.some(cell => /^\d{5,6}$/.test(String(cell || '').trim()))) {
+      dataStartRow = i;
+      break;
     }
+  }
 
-    if (sku && (almacen === 'VES' || almacen === '')) {
-      stockMap[sku] = (stockMap[sku] || 0) + disponible;
+  if (dataStartRow === -1) {
+    console.error('❌ ERROR: No se encontraron datos de productos en el Excel.');
+    process.exit(1);
+  }
+
+  const headers = rawData[dataStartRow - 1];
+
+  // Encontrar índices de columnas
+  let skuIndex = -1;
+  let almacenIndex = -1;
+  let disponibleIndex = -1;
+
+  headers.forEach((cell, idx) => {
+    const cellStr = String(cell || '').toUpperCase().trim();
+    if (cellStr.includes('ARTÍCULO') || cellStr.includes('ARTICULO')) {
+      skuIndex = idx - 1; // Código está en columna anterior al nombre
+    }
+    if (cellStr.includes('ALMACEN') || cellStr.includes('ALMACÉN')) {
+      almacenIndex = idx;
+    }
+    if (cellStr.includes('DISPONIBLE')) {
+      disponibleIndex = idx;
     }
   });
+
+  // Valores por defecto
+  if (skuIndex === -1) skuIndex = 1;
+  if (almacenIndex === -1) almacenIndex = 9;
+  if (disponibleIndex === -1) disponibleIndex = 18;
+
+  console.log(`🔍 Indices encontrados - SKU: ${skuIndex}, Almacen: ${almacenIndex}, Disponible: ${disponibleIndex}`);
+
+  const formatSKU = (sku) => {
+    if (!sku) return null;
+    let clean = String(sku).trim();
+    clean = clean.replace(/[^a-zA-Z0-9]/g, '');
+    return clean || null;
+  };
+
+  for (let i = dataStartRow; i < rawData.length; i++) {
+    const row = rawData[i];
+    if (!row || row.length === 0) continue;
+
+    const almacen = String(row[almacenIndex] || '').trim().toUpperCase();
+    const sku = formatSKU(row[skuIndex]);
+    const disponible = parseInt(row[disponibleIndex], 10) || 0;
+
+    // TEMP LOG: Imprimir las primeras 5 filas para diagnóstico
+    if (i < dataStartRow + 5) {
+      console.log(`[DIAGNOSTIC] Row ${i}: SKU='${sku}', Almacen='${almacen}', Disponible='${disponible}'`);
+    }
+
+    if (sku && almacen === 'VES') {
+      stockMap[sku] = (stockMap[sku] || 0) + disponible;
+    }
+  }
 
   const outputPath = path.join(__dirname, '..', 'Data', 'data_stock.json');
   const result = {
@@ -115,6 +162,9 @@ async function downloadAndConvert() {
     const response = await axios.get(STOCK_URL, {
       responseType: 'arraybuffer',
       timeout: 30000,
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+      }
     });
 
     if (response.status !== 200) {
