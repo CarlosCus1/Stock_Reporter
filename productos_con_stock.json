@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "lastUpdated": "2026-03-12T13:00:08.166Z",
+    "lastUpdated": "2026-03-12T14:07:31.775Z",
     "totalProducts": 1088,
     "almacen": "VES",
     "sinStock": 146,
@@ -6906,7 +6906,7 @@
       "linea": "PEGAMENTOS",
       "categoria": "ESCOLAR",
       "unBx": 12,
-      "stock": 79425,
+      "stock": 92025,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
