@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "lastUpdated": "2026-03-12T18:54:29.992Z",
+    "lastUpdated": "2026-03-12T19:42:36.343Z",
     "totalProducts": 1088,
     "almacen": "VES",
     "sinStock": 148,
@@ -6906,7 +6906,7 @@
       "linea": "PEGAMENTOS",
       "categoria": "ESCOLAR",
       "unBx": 12,
-      "stock": 91989,
+      "stock": 92793,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -10286,7 +10286,7 @@
       "linea": "FORROS",
       "categoria": "ESCOLAR",
       "unBx": 25,
-      "stock": 11710,
+      "stock": 10460,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -10299,7 +10299,7 @@
       "linea": "FORROS",
       "categoria": "ESCOLAR",
       "unBx": 50,
-      "stock": 127802,
+      "stock": 126802,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
