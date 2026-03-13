@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "lastUpdated": "2026-03-13T12:58:34.024Z",
+    "lastUpdated": "2026-03-13T14:03:38.529Z",
     "totalProducts": 1088,
     "almacen": "VES",
     "sinStock": 151,
@@ -2616,7 +2616,7 @@
       "linea": "FORROS",
       "categoria": "ESCOLAR",
       "unBx": 100,
-      "stock": 74412,
+      "stock": 74411,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -2655,7 +2655,7 @@
       "linea": "FORROS",
       "categoria": "ESCOLAR",
       "unBx": 25,
-      "stock": 3350,
+      "stock": 6850,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
