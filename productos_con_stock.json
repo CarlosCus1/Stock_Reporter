@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "lastUpdated": "2026-03-24T17:56:12.562Z",
+    "lastUpdated": "2026-03-24T19:05:58.717Z",
     "totalProducts": 1088,
     "almacen": "VES",
     "sinStock": 183,
@@ -2694,7 +2694,7 @@
       "linea": "FORROS",
       "categoria": "ESCOLAR",
       "unBx": 18,
-      "stock": 17614,
+      "stock": 17668,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -3591,7 +3591,7 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 100,
-      "stock": 35958,
+      "stock": 35658,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -4371,7 +4371,7 @@
       "linea": "PINTURA",
       "categoria": "ESCOLAR",
       "unBx": 144,
-      "stock": 10317,
+      "stock": 9885,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -5138,7 +5138,7 @@
       "linea": "ESCRITURA",
       "categoria": "ESCOLAR",
       "unBx": 24,
-      "stock": 11869,
+      "stock": 11866,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -7517,7 +7517,7 @@
       "linea": "DIBUJO",
       "categoria": "ESCOLAR",
       "unBx": 400,
-      "stock": 2772,
+      "stock": 2572,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -7530,7 +7530,7 @@
       "linea": "DIBUJO",
       "categoria": "ESCOLAR",
       "unBx": 200,
-      "stock": 18839,
+      "stock": 18439,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
