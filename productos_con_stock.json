@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "lastUpdated": "2026-03-28T15:31:12.308Z",
+    "lastUpdated": "2026-03-28T16:34:26.062Z",
     "totalProducts": 1088,
     "almacen": "VES",
     "sinStock": 198,
@@ -3006,7 +3006,7 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 50,
-      "stock": 39361,
+      "stock": 39061,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -3019,7 +3019,7 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 50,
-      "stock": 8606,
+      "stock": 8306,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -3058,7 +3058,7 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 50,
-      "stock": 14132,
+      "stock": 13832,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -3123,7 +3123,7 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 50,
-      "stock": 10840,
+      "stock": 10540,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -3149,7 +3149,7 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 50,
-      "stock": 10868,
+      "stock": 10568,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -3162,7 +3162,7 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 50,
-      "stock": 13767,
+      "stock": 13567,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -6269,7 +6269,7 @@
       "linea": "PINTURA",
       "categoria": "ESCOLAR",
       "unBx": 12,
-      "stock": 2196,
+      "stock": 2016,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -7348,7 +7348,7 @@
       "linea": "ACCESORIOS",
       "categoria": "ESCOLAR",
       "unBx": 96,
-      "stock": 1708,
+      "stock": 2668,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
