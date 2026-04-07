@@ -96,7 +96,7 @@ app.get('/api/stock/appweb', async (req, res) => {
   try {
     console.log('Descargando desde appweb...');
     
-    const url = 'http://appweb.cipsa.com.pe:8054/AlmacenStock/DownLoadFiles?value={%22%20%22:%22%22,%22parametroX1%22:%220%22,%22parametroX2%22:%220%22}';
+    const url = 'http://appweb.cipsa.com.pe:8054/AlmacenStock/DownLoadFiles?value=%7B%22parametroX1%22:%220%22,%22parametroX2%22:%220%22%7D';
     
     const buffer = await downloadFile(url);
     console.log('Archivo descargado, parseando...');
