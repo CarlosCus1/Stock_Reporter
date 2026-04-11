@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "lastUpdated": "2026-04-11T16:37:31.366Z",
+    "lastUpdated": "2026-04-11T17:31:13.469Z",
     "totalProducts": 1088,
     "almacen": "VES",
     "sinStock": 212,
@@ -6048,7 +6048,7 @@
       "linea": "PINTURA",
       "categoria": "ESCOLAR",
       "unBx": 36,
-      "stock": 18078,
+      "stock": 18072,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -6958,7 +6958,7 @@
       "linea": "ACCESORIOS",
       "categoria": "ESCOLAR",
       "unBx": 144,
-      "stock": 45986,
+      "stock": 45960,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
