@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "lastUpdated": "2026-04-13T21:50:39.909Z",
+    "lastUpdated": "2026-04-13T22:42:47.503Z",
     "totalProducts": 1088,
     "almacen": "VES",
-    "sinStock": 205,
-    "bajoStock": 295,
+    "sinStock": 206,
+    "bajoStock": 294,
     "status": "OPERATIVO"
   },
   "productos": [
@@ -1498,7 +1498,7 @@
       "linea": "PELOTAS",
       "categoria": "PELOTAS",
       "unBx": 1,
-      "stock": 19,
+      "stock": 21,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -2603,7 +2603,7 @@
       "linea": "FORROS",
       "categoria": "ESCOLAR",
       "unBx": 50,
-      "stock": 72598,
+      "stock": 72548,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -7556,10 +7556,10 @@
       "linea": "DIBUJO",
       "categoria": "ESCOLAR",
       "unBx": 100,
-      "stock": 1,
-      "estado": "⚠ BAJO",
-      "bgColor": "FFFEF3C7",
-      "fontColor": "FFD97706"
+      "stock": 0,
+      "estado": "✗ AGOTADO",
+      "bgColor": "FFFEE2E2",
+      "fontColor": "FFDC2626"
     },
     {
       "orden": 582,
@@ -7842,7 +7842,7 @@
       "linea": "ESCRITURA",
       "categoria": "ESCOLAR",
       "unBx": 200,
-      "stock": 516,
+      "stock": 216,
       "estado": "⚠ BAJO",
       "bgColor": "FFFEF3C7",
       "fontColor": "FFD97706"
@@ -10299,7 +10299,7 @@
       "linea": "FORROS",
       "categoria": "ESCOLAR",
       "unBx": 50,
-      "stock": 97254,
+      "stock": 97204,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -11625,7 +11625,7 @@
       "linea": "REPRESENTADAS",
       "categoria": "REPRESENTADAS",
       "unBx": 80,
-      "stock": 16137,
+      "stock": 41177,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -12652,7 +12652,7 @@
       "linea": "REPRESENTADAS",
       "categoria": "REPRESENTADAS",
       "unBx": 40,
-      "stock": 6211,
+      "stock": 6201,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -12795,7 +12795,7 @@
       "linea": "REPRESENTADAS",
       "categoria": "REPRESENTADAS",
       "unBx": 2,
-      "stock": 255,
+      "stock": 254,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
