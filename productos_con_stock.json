@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "lastUpdated": "2026-04-14T13:26:16.845Z",
+    "lastUpdated": "2026-04-14T15:13:24.878Z",
     "totalProducts": 1088,
     "almacen": "VES",
     "sinStock": 211,
@@ -8180,7 +8180,7 @@
       "linea": "METALICA",
       "categoria": "ESCOLAR",
       "unBx": 96,
-      "stock": 10737,
+      "stock": 10736,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -8687,7 +8687,7 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 24,
-      "stock": 5193,
+      "stock": 5192,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -11898,7 +11898,7 @@
       "linea": "REPRESENTADAS",
       "categoria": "REPRESENTADAS",
       "unBx": 120,
-      "stock": 89,
+      "stock": 71,
       "estado": "⚠ BAJO",
       "bgColor": "FFFEF3C7",
       "fontColor": "FFD97706"
@@ -11989,7 +11989,7 @@
       "linea": "REPRESENTADAS",
       "categoria": "REPRESENTADAS",
       "unBx": 120,
-      "stock": 1256,
+      "stock": 1244,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -12002,7 +12002,7 @@
       "linea": "REPRESENTADAS",
       "categoria": "REPRESENTADAS",
       "unBx": 120,
-      "stock": 1229,
+      "stock": 1191,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -12028,7 +12028,7 @@
       "linea": "REPRESENTADAS",
       "categoria": "REPRESENTADAS",
       "unBx": 120,
-      "stock": 509,
+      "stock": 490,
       "estado": "⚠ BAJO",
       "bgColor": "FFFEF3C7",
       "fontColor": "FFD97706"
@@ -12743,7 +12743,7 @@
       "linea": "REPRESENTADAS",
       "categoria": "REPRESENTADAS",
       "unBx": 20,
-      "stock": 1450,
+      "stock": 1445,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
