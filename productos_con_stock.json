@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "lastUpdated": "2026-04-17T02:34:16.686Z",
+    "lastUpdated": "2026-04-17T13:19:51.141Z",
     "totalProducts": 1088,
     "almacen": "VES",
-    "sinStock": 210,
+    "sinStock": 207,
     "bajoStock": 291,
     "status": "OPERATIVO"
   },
@@ -1420,7 +1420,7 @@
       "linea": "PELOTAS",
       "categoria": "PELOTAS",
       "unBx": 60,
-      "stock": 856,
+      "stock": 826,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -1433,7 +1433,7 @@
       "linea": "PELOTAS",
       "categoria": "PELOTAS",
       "unBx": 60,
-      "stock": 3426,
+      "stock": 3396,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -1446,7 +1446,7 @@
       "linea": "PELOTAS",
       "categoria": "PELOTAS",
       "unBx": 60,
-      "stock": 5340,
+      "stock": 5317,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -2499,7 +2499,7 @@
       "linea": "PELOTAS",
       "categoria": "PELOTAS",
       "unBx": 400,
-      "stock": 86550,
+      "stock": 112950,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -3578,7 +3578,7 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 100,
-      "stock": 56222,
+      "stock": 60722,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -6269,10 +6269,10 @@
       "linea": "PINTURA",
       "categoria": "ESCOLAR",
       "unBx": 12,
-      "stock": 0,
-      "estado": "✗ AGOTADO",
-      "bgColor": "FFFEE2E2",
-      "fontColor": "FFDC2626"
+      "stock": 792,
+      "estado": "✓ OK",
+      "bgColor": "FFD1FAE5",
+      "fontColor": "FF065F46"
     },
     {
       "orden": 483,
@@ -6282,10 +6282,10 @@
       "linea": "PINTURA",
       "categoria": "ESCOLAR",
       "unBx": 12,
-      "stock": 0,
-      "estado": "✗ AGOTADO",
-      "bgColor": "FFFEE2E2",
-      "fontColor": "FFDC2626"
+      "stock": 792,
+      "estado": "✓ OK",
+      "bgColor": "FFD1FAE5",
+      "fontColor": "FF065F46"
     },
     {
       "orden": 484,
@@ -6906,7 +6906,7 @@
       "linea": "PEGAMENTOS",
       "categoria": "ESCOLAR",
       "unBx": 12,
-      "stock": 67859,
+      "stock": 83699,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -7985,7 +7985,7 @@
       "linea": "ESCRITURA",
       "categoria": "ESCOLAR",
       "unBx": 1152,
-      "stock": 434,
+      "stock": 574,
       "estado": "⚠ BAJO",
       "bgColor": "FFFEF3C7",
       "fontColor": "FFD97706"
@@ -8947,10 +8947,10 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 12,
-      "stock": 0,
-      "estado": "✗ AGOTADO",
-      "bgColor": "FFFEE2E2",
-      "fontColor": "FFDC2626"
+      "stock": 1048,
+      "estado": "✓ OK",
+      "bgColor": "FFD1FAE5",
+      "fontColor": "FF065F46"
     },
     {
       "orden": 689,
