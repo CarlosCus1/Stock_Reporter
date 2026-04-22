@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "lastUpdated": "2026-04-22T19:13:14.215Z",
+    "lastUpdated": "2026-04-22T20:54:55.454Z",
     "totalProducts": 1088,
     "almacen": "VES",
     "sinStock": 266,
@@ -601,7 +601,7 @@
       "linea": "PELOTAS",
       "categoria": "PELOTAS",
       "unBx": 48,
-      "stock": 987,
+      "stock": 927,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -1433,7 +1433,7 @@
       "linea": "PELOTAS",
       "categoria": "PELOTAS",
       "unBx": 60,
-      "stock": 3171,
+      "stock": 3111,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -2239,7 +2239,7 @@
       "linea": "PELOTAS",
       "categoria": "PELOTAS",
       "unBx": 1,
-      "stock": 436,
+      "stock": 412,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -2603,7 +2603,7 @@
       "linea": "FORROS",
       "categoria": "ESCOLAR",
       "unBx": 50,
-      "stock": 89797,
+      "stock": 88697,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -2668,7 +2668,7 @@
       "linea": "FORROS",
       "categoria": "ESCOLAR",
       "unBx": 48,
-      "stock": 19923,
+      "stock": 19443,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -2681,7 +2681,7 @@
       "linea": "FORROS",
       "categoria": "ESCOLAR",
       "unBx": 48,
-      "stock": 48772,
+      "stock": 48340,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -2733,7 +2733,7 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 50,
-      "stock": 23119,
+      "stock": 23169,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -2759,7 +2759,7 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 50,
-      "stock": 1076,
+      "stock": 1126,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -2824,7 +2824,7 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 50,
-      "stock": 1681,
+      "stock": 1381,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -2876,7 +2876,7 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 50,
-      "stock": 703,
+      "stock": 403,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -2928,7 +2928,7 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 50,
-      "stock": 3382,
+      "stock": 3082,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -3019,7 +3019,7 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 50,
-      "stock": 3729,
+      "stock": 3629,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -3123,7 +3123,7 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 50,
-      "stock": 4921,
+      "stock": 4771,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -3149,7 +3149,7 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 50,
-      "stock": 9093,
+      "stock": 8993,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -3266,7 +3266,7 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 100,
-      "stock": 1749,
+      "stock": 1349,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -4293,7 +4293,7 @@
       "linea": "PINTURA",
       "categoria": "ESCOLAR",
       "unBx": 18,
-      "stock": 14,
+      "stock": 32,
       "estado": "⚠ BAJO",
       "bgColor": "FFFEF3C7",
       "fontColor": "FFD97706"
@@ -4306,7 +4306,7 @@
       "linea": "PINTURA",
       "categoria": "ESCOLAR",
       "unBx": 144,
-      "stock": 66873,
+      "stock": 66973,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -4319,7 +4319,7 @@
       "linea": "PINTURA",
       "categoria": "ESCOLAR",
       "unBx": 72,
-      "stock": 4595,
+      "stock": 4667,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -4358,7 +4358,7 @@
       "linea": "PINTURA",
       "categoria": "ESCOLAR",
       "unBx": 144,
-      "stock": 44418,
+      "stock": 44706,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -4436,7 +4436,7 @@
       "linea": "ESCRITURA",
       "categoria": "ESCOLAR",
       "unBx": 144,
-      "stock": 59222,
+      "stock": 59366,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -4618,7 +4618,7 @@
       "linea": "PINTURA",
       "categoria": "ESCOLAR",
       "unBx": 36,
-      "stock": 2649,
+      "stock": 2721,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -4683,7 +4683,7 @@
       "linea": "PINTURA",
       "categoria": "ESCOLAR",
       "unBx": 48,
-      "stock": 21,
+      "stock": 49,
       "estado": "⚠ BAJO",
       "bgColor": "FFFEF3C7",
       "fontColor": "FFD97706"
@@ -5138,7 +5138,7 @@
       "linea": "ESCRITURA",
       "categoria": "ESCOLAR",
       "unBx": 24,
-      "stock": 11340,
+      "stock": 11364,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -5853,7 +5853,7 @@
       "linea": "ACCESORIOS",
       "categoria": "ESCOLAR",
       "unBx": 36,
-      "stock": 14764,
+      "stock": 14758,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -5931,7 +5931,7 @@
       "linea": "ACCESORIOS",
       "categoria": "ESCOLAR",
       "unBx": 36,
-      "stock": 2726,
+      "stock": 2762,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -6035,7 +6035,7 @@
       "linea": "MANUALIDADES",
       "categoria": "ESCOLAR",
       "unBx": 72,
-      "stock": 24327,
+      "stock": 24399,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -6048,7 +6048,7 @@
       "linea": "PINTURA",
       "categoria": "ESCOLAR",
       "unBx": 36,
-      "stock": 18224,
+      "stock": 18440,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -6880,7 +6880,7 @@
       "linea": "PEGAMENTOS",
       "categoria": "ESCOLAR",
       "unBx": 192,
-      "stock": 16741,
+      "stock": 16549,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -6893,7 +6893,7 @@
       "linea": "PEGAMENTOS",
       "categoria": "ESCOLAR",
       "unBx": 576,
-      "stock": 78495,
+      "stock": 78375,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -6958,7 +6958,7 @@
       "linea": "ACCESORIOS",
       "categoria": "ESCOLAR",
       "unBx": 144,
-      "stock": 56027,
+      "stock": 54011,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -8167,7 +8167,7 @@
       "linea": "ESCRITURA",
       "categoria": "ESCOLAR",
       "unBx": 144,
-      "stock": 171792,
+      "stock": 171912,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -8453,7 +8453,7 @@
       "linea": "METALICA",
       "categoria": "ESCOLAR",
       "unBx": 300,
-      "stock": 266,
+      "stock": 6,
       "estado": "⚠ BAJO",
       "bgColor": "FFFEF3C7",
       "fontColor": "FFD97706"
@@ -8570,7 +8570,7 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 24,
-      "stock": 16995,
+      "stock": 16515,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -10299,7 +10299,7 @@
       "linea": "FORROS",
       "categoria": "ESCOLAR",
       "unBx": 50,
-      "stock": 89454,
+      "stock": 89854,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -11612,7 +11612,7 @@
       "linea": "REPRESENTADAS",
       "categoria": "REPRESENTADAS",
       "unBx": 30,
-      "stock": 14557,
+      "stock": 14257,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -11625,7 +11625,7 @@
       "linea": "REPRESENTADAS",
       "categoria": "REPRESENTADAS",
       "unBx": 80,
-      "stock": 41787,
+      "stock": 39307,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -12756,7 +12756,7 @@
       "linea": "REPRESENTADAS",
       "categoria": "REPRESENTADAS",
       "unBx": 100,
-      "stock": 74132,
+      "stock": 73932,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
