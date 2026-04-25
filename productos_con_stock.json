@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "lastUpdated": "2026-04-25T16:41:14.207Z",
+    "lastUpdated": "2026-04-25T17:37:28.613Z",
     "totalProducts": 1088,
     "almacen": "VES",
-    "sinStock": 220,
-    "bajoStock": 297,
+    "sinStock": 221,
+    "bajoStock": 296,
     "status": "OPERATIVO"
   },
   "productos": [
@@ -4917,7 +4917,7 @@
       "linea": "PINTURA",
       "categoria": "ESCOLAR",
       "unBx": 576,
-      "stock": 981,
+      "stock": 969,
       "estado": "⚠ BAJO",
       "bgColor": "FFFEF3C7",
       "fontColor": "FFD97706"
@@ -10364,7 +10364,7 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 40,
-      "stock": 141,
+      "stock": 11,
       "estado": "⚠ BAJO",
       "bgColor": "FFFEF3C7",
       "fontColor": "FFD97706"
@@ -12327,10 +12327,10 @@
       "linea": "REPRESENTADAS",
       "categoria": "REPRESENTADAS",
       "unBx": 720,
-      "stock": 25,
-      "estado": "⚠ BAJO",
-      "bgColor": "FFFEF3C7",
-      "fontColor": "FFD97706"
+      "stock": 0,
+      "estado": "✗ AGOTADO",
+      "bgColor": "FFFEE2E2",
+      "fontColor": "FFDC2626"
     },
     {
       "orden": 949,
