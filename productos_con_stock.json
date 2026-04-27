@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "lastUpdated": "2026-04-27T22:51:57.317Z",
+    "lastUpdated": "2026-04-27T23:53:23.260Z",
     "totalProducts": 1088,
     "almacen": "VES",
     "sinStock": 222,
@@ -12652,7 +12652,7 @@
       "linea": "REPRESENTADAS",
       "categoria": "REPRESENTADAS",
       "unBx": 40,
-      "stock": 3524,
+      "stock": 3515,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
