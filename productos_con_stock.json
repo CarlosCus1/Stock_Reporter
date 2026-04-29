@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "lastUpdated": "2026-04-29T17:28:46.564Z",
+    "lastUpdated": "2026-04-29T19:25:20.758Z",
     "totalProducts": 1088,
     "almacen": "VES",
-    "sinStock": 213,
-    "bajoStock": 303,
+    "sinStock": 218,
+    "bajoStock": 300,
     "status": "OPERATIVO"
   },
   "productos": [
@@ -432,7 +432,7 @@
       "linea": "PELOTAS",
       "categoria": "PELOTAS",
       "unBx": 50,
-      "stock": 154,
+      "stock": 153,
       "estado": "⚠ BAJO",
       "bgColor": "FFFEF3C7",
       "fontColor": "FFD97706"
@@ -939,7 +939,7 @@
       "linea": "PELOTAS",
       "categoria": "PELOTAS",
       "unBx": 60,
-      "stock": 11247,
+      "stock": 11217,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -952,7 +952,7 @@
       "linea": "PELOTAS",
       "categoria": "PELOTAS",
       "unBx": 60,
-      "stock": 13821,
+      "stock": 13791,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -965,7 +965,7 @@
       "linea": "PELOTAS",
       "categoria": "PELOTAS",
       "unBx": 60,
-      "stock": 3625,
+      "stock": 3595,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -1004,7 +1004,7 @@
       "linea": "PELOTAS",
       "categoria": "PELOTAS",
       "unBx": 60,
-      "stock": 12868,
+      "stock": 12838,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -1030,7 +1030,7 @@
       "linea": "PELOTAS",
       "categoria": "PELOTAS",
       "unBx": 60,
-      "stock": 7215,
+      "stock": 7185,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -1043,7 +1043,7 @@
       "linea": "PELOTAS",
       "categoria": "PELOTAS",
       "unBx": 60,
-      "stock": 7478,
+      "stock": 7448,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -1264,7 +1264,7 @@
       "linea": "PELOTAS",
       "categoria": "PELOTAS",
       "unBx": 60,
-      "stock": 1017,
+      "stock": 997,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -1368,10 +1368,10 @@
       "linea": "PELOTAS",
       "categoria": "PELOTAS",
       "unBx": 60,
-      "stock": 0,
-      "estado": "✗ AGOTADO",
-      "bgColor": "FFFEE2E2",
-      "fontColor": "FFDC2626"
+      "stock": 12,
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 106,
@@ -1381,7 +1381,7 @@
       "linea": "PELOTAS",
       "categoria": "PELOTAS",
       "unBx": 60,
-      "stock": 3679,
+      "stock": 3659,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -1420,7 +1420,7 @@
       "linea": "PELOTAS",
       "categoria": "PELOTAS",
       "unBx": 60,
-      "stock": 4101,
+      "stock": 4071,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -1433,7 +1433,7 @@
       "linea": "PELOTAS",
       "categoria": "PELOTAS",
       "unBx": 60,
-      "stock": 2748,
+      "stock": 2718,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -1446,7 +1446,7 @@
       "linea": "PELOTAS",
       "categoria": "PELOTAS",
       "unBx": 60,
-      "stock": 4817,
+      "stock": 4787,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -1459,7 +1459,7 @@
       "linea": "PELOTAS",
       "categoria": "PELOTAS",
       "unBx": 60,
-      "stock": 5151,
+      "stock": 5131,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -1472,7 +1472,7 @@
       "linea": "PELOTAS",
       "categoria": "PELOTAS",
       "unBx": 60,
-      "stock": 8033,
+      "stock": 8003,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -1888,10 +1888,10 @@
       "linea": "PELOTAS",
       "categoria": "PELOTAS",
       "unBx": 60,
-      "stock": 1,
-      "estado": "⚠ BAJO",
-      "bgColor": "FFFEF3C7",
-      "fontColor": "FFD97706"
+      "stock": 0,
+      "estado": "✗ AGOTADO",
+      "bgColor": "FFFEE2E2",
+      "fontColor": "FFDC2626"
     },
     {
       "orden": 146,
@@ -2798,10 +2798,10 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 50,
-      "stock": 5,
-      "estado": "⚠ BAJO",
-      "bgColor": "FFFEF3C7",
-      "fontColor": "FFD97706"
+      "stock": 0,
+      "estado": "✗ AGOTADO",
+      "bgColor": "FFFEE2E2",
+      "fontColor": "FFDC2626"
     },
     {
       "orden": 216,
@@ -2863,10 +2863,10 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 50,
-      "stock": 1,
-      "estado": "⚠ BAJO",
-      "bgColor": "FFFEF3C7",
-      "fontColor": "FFD97706"
+      "stock": 0,
+      "estado": "✗ AGOTADO",
+      "bgColor": "FFFEE2E2",
+      "fontColor": "FFDC2626"
     },
     {
       "orden": 221,
@@ -2915,7 +2915,7 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 50,
-      "stock": 19,
+      "stock": 17,
       "estado": "⚠ BAJO",
       "bgColor": "FFFEF3C7",
       "fontColor": "FFD97706"
@@ -2993,10 +2993,10 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 50,
-      "stock": 1,
-      "estado": "⚠ BAJO",
-      "bgColor": "FFFEF3C7",
-      "fontColor": "FFD97706"
+      "stock": 0,
+      "estado": "✗ AGOTADO",
+      "bgColor": "FFFEE2E2",
+      "fontColor": "FFDC2626"
     },
     {
       "orden": 231,
@@ -3422,7 +3422,7 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 100,
-      "stock": 3522,
+      "stock": 3517,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -3825,7 +3825,7 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 100,
-      "stock": 8379,
+      "stock": 8384,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -8986,10 +8986,10 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 12,
-      "stock": 459,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "stock": 0,
+      "estado": "✗ AGOTADO",
+      "bgColor": "FFFEE2E2",
+      "fontColor": "FFDC2626"
     },
     {
       "orden": 692,
@@ -9038,10 +9038,10 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 6,
-      "stock": 679,
-      "estado": "✓ OK",
-      "bgColor": "FFD1FAE5",
-      "fontColor": "FF065F46"
+      "stock": 0,
+      "estado": "✗ AGOTADO",
+      "bgColor": "FFFEE2E2",
+      "fontColor": "FFDC2626"
     },
     {
       "orden": 696,
