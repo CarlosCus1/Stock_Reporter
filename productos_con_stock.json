@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "lastUpdated": "2026-04-28T23:00:50.340Z",
+    "lastUpdated": "2026-04-29T02:52:09.019Z",
     "totalProducts": 1088,
     "almacen": "VES",
-    "sinStock": 223,
-    "bajoStock": 293,
+    "sinStock": 222,
+    "bajoStock": 294,
     "status": "OPERATIVO"
   },
   "productos": [
@@ -7231,10 +7231,10 @@
       "linea": "ACCESORIOS",
       "categoria": "ESCOLAR",
       "unBx": 144,
-      "stock": 0,
-      "estado": "✗ AGOTADO",
-      "bgColor": "FFFEE2E2",
-      "fontColor": "FFDC2626"
+      "stock": 30,
+      "estado": "⚠ BAJO",
+      "bgColor": "FFFEF3C7",
+      "fontColor": "FFD97706"
     },
     {
       "orden": 557,
@@ -12028,7 +12028,7 @@
       "linea": "REPRESENTADAS",
       "categoria": "REPRESENTADAS",
       "unBx": 120,
-      "stock": 238,
+      "stock": 188,
       "estado": "⚠ BAJO",
       "bgColor": "FFFEF3C7",
       "fontColor": "FFD97706"
@@ -12561,7 +12561,7 @@
       "linea": "REPRESENTADAS",
       "categoria": "REPRESENTADAS",
       "unBx": 240,
-      "stock": 3046,
+      "stock": 3001,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
