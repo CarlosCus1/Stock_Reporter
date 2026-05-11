@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "lastUpdated": "2026-05-11T21:16:22.706Z",
+    "lastUpdated": "2026-05-11T22:53:50.773Z",
     "totalProducts": 1088,
     "almacen": "VES",
     "sinStock": 218,
-    "bajoStock": 296,
+    "bajoStock": 295,
     "status": "OPERATIVO"
   },
   "productos": [
@@ -10364,10 +10364,10 @@
       "linea": "ARCHIVO",
       "categoria": "ESCOLAR",
       "unBx": 40,
-      "stock": 11,
-      "estado": "⚠ BAJO",
-      "bgColor": "FFFEF3C7",
-      "fontColor": "FFD97706"
+      "stock": 19211,
+      "estado": "✓ OK",
+      "bgColor": "FFD1FAE5",
+      "fontColor": "FF065F46"
     },
     {
       "orden": 798,
@@ -11677,7 +11677,7 @@
       "linea": "REPRESENTADAS",
       "categoria": "REPRESENTADAS",
       "unBx": 120,
-      "stock": 541,
+      "stock": 517,
       "estado": "⚠ BAJO",
       "bgColor": "FFFEF3C7",
       "fontColor": "FFD97706"
@@ -11872,7 +11872,7 @@
       "linea": "REPRESENTADAS",
       "categoria": "REPRESENTADAS",
       "unBx": 120,
-      "stock": 873,
+      "stock": 843,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -12158,7 +12158,7 @@
       "linea": "REPRESENTADAS",
       "categoria": "REPRESENTADAS",
       "unBx": 480,
-      "stock": 727,
+      "stock": 715,
       "estado": "⚠ BAJO",
       "bgColor": "FFFEF3C7",
       "fontColor": "FFD97706"
@@ -12405,7 +12405,7 @@
       "linea": "REPRESENTADAS",
       "categoria": "REPRESENTADAS",
       "unBx": 240,
-      "stock": 879,
+      "stock": 639,
       "estado": "⚠ BAJO",
       "bgColor": "FFFEF3C7",
       "fontColor": "FFD97706"
@@ -12795,7 +12795,7 @@
       "linea": "REPRESENTADAS",
       "categoria": "REPRESENTADAS",
       "unBx": 2,
-      "stock": 226,
+      "stock": 218,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -12821,7 +12821,7 @@
       "linea": "REPRESENTADAS",
       "categoria": "REPRESENTADAS",
       "unBx": 120,
-      "stock": 34,
+      "stock": 26,
       "estado": "⚠ BAJO",
       "bgColor": "FFFEF3C7",
       "fontColor": "FFD97706"
@@ -12990,7 +12990,7 @@
       "linea": "REPRESENTADAS",
       "categoria": "REPRESENTADAS",
       "unBx": 18,
-      "stock": 73,
+      "stock": 63,
       "estado": "⚠ BAJO",
       "bgColor": "FFFEF3C7",
       "fontColor": "FFD97706"
@@ -13692,7 +13692,7 @@
       "linea": "REPRESENTADAS",
       "categoria": "REPRESENTADAS",
       "unBx": 100,
-      "stock": 74,
+      "stock": 65,
       "estado": "⚠ BAJO",
       "bgColor": "FFFEF3C7",
       "fontColor": "FFD97706"
