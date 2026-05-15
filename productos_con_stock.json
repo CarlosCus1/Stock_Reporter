@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "lastUpdated": "2026-05-15T20:59:57.116Z",
+    "lastUpdated": "2026-05-15T22:06:14.531Z",
     "totalProducts": 1088,
     "almacen": "VES",
     "sinStock": 225,
@@ -8401,7 +8401,7 @@
       "linea": "METALICA",
       "categoria": "ESCOLAR",
       "unBx": 48,
-      "stock": 8203,
+      "stock": 8193,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
@@ -12652,7 +12652,7 @@
       "linea": "REPRESENTADAS",
       "categoria": "REPRESENTADAS",
       "unBx": 40,
-      "stock": 2304,
+      "stock": 2284,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
