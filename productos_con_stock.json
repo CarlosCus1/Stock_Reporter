@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "lastUpdated": "2026-05-19T19:00:12.000Z",
+    "lastUpdated": "2026-05-19T20:49:24.613Z",
     "totalProducts": 1088,
     "almacen": "VES",
     "sinStock": 271,
@@ -12028,7 +12028,7 @@
       "linea": "REPRESENTADAS",
       "categoria": "REPRESENTADAS",
       "unBx": 120,
-      "stock": 150,
+      "stock": 144,
       "estado": "⚠ BAJO",
       "bgColor": "FFFEF3C7",
       "fontColor": "FFD97706"
@@ -12561,7 +12561,7 @@
       "linea": "REPRESENTADAS",
       "categoria": "REPRESENTADAS",
       "unBx": 240,
-      "stock": 2612,
+      "stock": 2606,
       "estado": "✓ OK",
       "bgColor": "FFD1FAE5",
       "fontColor": "FF065F46"
